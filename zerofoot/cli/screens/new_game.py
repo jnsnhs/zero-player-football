@@ -1,4 +1,7 @@
+from sys import exit
+
 from ...cli.screens.screen import Screen
+from ...cli.screens.save_game import SaveGameScreen
 
 
 class NewGameScreen(Screen):
@@ -56,16 +59,16 @@ class NewGameScreen(Screen):
             self.confirm_club_choice(club)
 
     def create_user(self, database, club):
-        self.clear_screen()
         database.user.club = club
-        print(f"Sie sind nun Anhänger von {club.name} und "
-              "werden die Geschicke dieses Vereins in der "
-              f"Spielzeit {"XXX"} verfolgen.", end="\n\n")
-        print("Soll der Spielstand gespeichert werden? (j/n)")
-        user_input = input("> ")
-        if user_input.casefold() in ["j", "ja", "y", "yes"]:
-            pass
-        elif user_input.casefold() in ["n", "nein", "no"]:
-            pass
-        else:
-            pass
+        while True:
+            self.clear_screen()
+            print(f"Sie sind nun Anhänger von {club.name} und "
+                  "werden die Geschicke dieses Vereins in der "
+                  f"Spielzeit {"XXX"} verfolgen.", end="\n\n")
+            print("[1] Spielstand speichern")
+            print("[2] Spiel beenden")
+            user_input = input("\n> ")
+            if user_input == "1":
+                SaveGameScreen(database)
+            elif user_input == "2":
+                exit(0)

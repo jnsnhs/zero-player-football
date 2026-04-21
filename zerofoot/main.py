@@ -1,7 +1,7 @@
 from csv import DictReader
 from os import path
 
-from .cli.screens.start import StartScreen
+from .cli.screens.main_menu import MainMenuScreen
 from .core.club import Club, Region
 from .core.referee import Referee
 from .core.league import League
@@ -19,7 +19,7 @@ class Main:
 
     def run(self) -> None:
         # self.database.print_leagues()
-        StartScreen(self)
+        MainMenuScreen(self)
         # print("Spiel wird gestartet mit: \n", self.db)
         # input("any key to quit")
         # self.controller.run()

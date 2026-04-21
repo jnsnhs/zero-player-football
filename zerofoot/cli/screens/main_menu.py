@@ -1,17 +1,16 @@
-import pickle
 import sys
-from uuid import uuid4
 
-from ...cli.screens.screen import Screen
+from .screen import Screen
 from .load_game import LoadGameScreen
-from ...cli.screens.new_game import NewGameScreen
+from .new_game import NewGameScreen
 
 
-class StartScreen(Screen):
+class MainMenuScreen(Screen):
 
     def __init__(self, app) -> None:
         super().__init__()
         self.app = app
+        print("Hauptmenü\n")
         print(
             "[1] Neues Spiel starten\n"
             "[2] Altes Spiel fortsetzen\n"
@@ -31,14 +30,3 @@ class StartScreen(Screen):
                 sys.exit(0)
             case _:
                 self.__init__(self.app)
-
-    def create_db(self):
-        unique_id = uuid4()
-        self.app.db = unique_id
-
-    def save_db(self):
-        try:
-            with open("./db.sav", "wb") as file:
-                pickle.dump(self.app.db, file)
-        except Exception as exception:
-            print(exception)

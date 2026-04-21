@@ -1,15 +1,16 @@
-import os
+from os import listdir
 import pickle
 
 from .screen import Screen
 
 
 class LoadGameScreen(Screen):
+
     def __init__(self, parent) -> None:
         super().__init__()
         self.parent = parent
         self.save_games = list()
-        for i in os.listdir():
+        for i in listdir():
             if ".sav" in i:
                 self.save_games.append(i)
         if self.save_games:
@@ -29,6 +30,9 @@ class LoadGameScreen(Screen):
         else:
             print("Kein Spielstand vorhanden.\n")
             input("Zurück mit beliebiger Taste...")
+
+    def choose_file(self):
+        pass
 
     def load_db(self, file):
         try:
