@@ -1,0 +1,49 @@
+average goals per game 3.5
+points per game 2
+
+1965: Die politische Aufstockung
+Erstmals spielen 18 Vereine um die Meisterschaft. Da ein Hauptstadt-Club nur aus Polit-Gründen mitkickt, regiert auf dem Rasen die rustikale Grätsche. Ein Sieg bringt zwei Zähler, die Bälle wiegen gefühlt eine Tonne und Taktik ist etwas für Träumer. Willkommen in der Ära der harten Männer, schweren Stiefel und Lederbälle!
+---
+
+league level 1
+"Bundesliga"
+region N, W, SW, S, NE
+3 Absteiger
+
+league level 2
+"Regionalliga Nord"
+region N
+
+league level 2
+"Regionalliga West"
+region W
+
+league level 2
+"Regionalliga Südwest"
+region SW
+
+league level 2
+"Regionalliga Süd"
+region S
+
+league level 2
+"Regionalliga Berlin"
+region NW
+
+---
+
+Vereinspokal, modifiziert
+
+32 Mannschaften, davon
+18 Bundesliga sowie, basierend auf Mitgliederzahlen:
+ 6 Regionalliga Süd
+ 4 Regionalliga West
+ 2 Regionalliga Nord
+ 1 Regionalliga Südwest
+ 1 Regionalliga Berlin
+Hauptrunde (32)
+Achtelfinale (16)
+Viertelfinale (8)
+Halbfinale (4)
+Finale (2)
+jeweils ein Spiel

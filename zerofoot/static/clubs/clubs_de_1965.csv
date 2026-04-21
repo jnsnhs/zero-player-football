@@ -1,0 +1,105 @@
+name,avg_gf,avg_ga,league_lvl,region,cup
+TSV 1860 München,2.35,1.18,1,south,1
+Borussia Dortmund,2.06,1.06,1,west,1
+FC Bayern München,2.09,1.12,1,south,1
+Werder Bremen,2.24,1.18,1,north,1
+1. FC Köln,2.18,1.21,1,west,1
+1. FC Nürnberg,1.59,1.26,1,south,1
+Eintracht Frankfurt,1.88,1.35,1,south,1
+Meidericher SV,2.06,1.41,1,west,1
+Hamburger SV,1.88,1.53,1,north,1
+Eintracht Braunschweig,1.44,1.44,1,north,1
+VfB Stuttgart,1.24,1.41,1,south,1
+Hannover 96,1.74,1.68,1,north,1
+Borussia Mönchengladbach,1.68,2.00,1,west,1
+FC Schalke 04,0.97,1.62,1,west,1
+1. FC Kaiserslautern,1.24,1.91,1,southwest,1
+Karlsruher SC,1.03,2.09,1,south,1
+Borussia Neunkirchen,0.94,2.41,1,southwest,1
+Tasmania Berlin,0.44,3.18,1,northeast,1
+FC St. Pauli,2.63,1.22,2,north,1
+1. SC Göttingen 05,2.03,1.00,2,north,0
+Holstein Kiel,2.13,1.28,2,north,1
+Bremerhaven 93,1.91,1.47,2,north,0
+VfB Lübeck,1.38,1.09,2,north,0
+SV Arminia Hannover,2.09,1.53,2,north,0
+VfL Osnabrück,1.75,1.72,2,north,0
+VfL Wolfsburg,1.72,1.72,2,north,0
+SC Concordia Hamburg,1.53,1.63,2,north,1
+Altona 93,1.28,1.47,2,north,0
+ASV Bergedorf 85,1.75,2.03,2,north,0
+VfB Oldenburg,1.81,2.16,2,north,0
+Bremer SV,1.81,2.13,2,north,0
+Itzehoer SV,1.50,1.88,2,north,0
+VfV Hildesheim,1.09,1.69,2,north,0
+SV Friedrichsort,1.41,2.31,2,north,0
+SC Victoria Hamburg,1.13,2.63,2,north,0
+TSV Uetersen,1.20,2.20,2,north,0
+Hertha BSC,4.53,0.83,2,northeast,0
+Tennis Borussia Berlin,3.60,1.67,2,northeast,1
+Spandauer SV,2.93,1.77,2,northeast,0
+Wacker 04 Berlin,2.57,1.73,2,northeast,0
+Hertha Zehlendorf,1.77,1.43,2,northeast,0
+SC Staaken,1.80,1.57,2,northeast,0
+BFC Südring,1.63,1.77,2,northeast,0
+1. FC Neukölln,1.70,2.07,2,northeast,0
+Berliner SV 92,1.63,2.17,2,northeast,0
+Blau-Weiß 90 Berlin,1.67,1.93,2,northeast,0
+Reinickendorfer Füchse,1.67,2.33,2,northeast,0
+VfB Hermsdorf,2.03,2.50,2,northeast,0
+Lichterfelder SU,1.13,2.73,2,northeast,0
+SC Tegel,1.13,2.53,2,northeast,0
+SC Gatow,1.20,2.00,2,northeast,0
+Viktoria 89 Berlin,1.13,3.10,2,northeast,0
+Fortuna Düsseldorf,2.32,0.65,2,west,1
+Rot-Weiss Essen,2.18,0.91,2,west,0
+Alemannia Aachen,2.85,1.18,2,west,1
+Rot-Weiß Oberhausen,1.79,1.35,2,west,0
+Wuppertaler SV,1.44,1.26,2,west,0
+Preußen Münster,1.62,1.38,2,west,1
+Schwarz-Weiß Essen,1.38,1.38,2,west,0
+Hamborn 07,1.29,1.35,2,west,0
+SC Viktoria Köln,1.50,1.74,2,west,0
+Arminia Bielefeld,1.76,1.71,2,west,1
+Eintracht Duisburg,1.38,1.56,2,west,0
+VfL Bochum,1.35,1.94,2,west,0
+TSV Marl-Hüls,1.38,1.71,2,west,0
+Bayer 04 Leverkusen,1.44,2.21,2,west,0
+Westfalia Herne,1.15,1.94,2,west,0
+Eintracht Gelsenkirchen,1.06,1.97,2,west,0
+VfB Bottrop,1.38,2.00,2,west,0
+STV Horst-Emscher,1.24,2.29,2,west,0
+FK Pirmasens,2.07,1.03,2,southwest,0
+1. FC Saarbrücken,2.97,1.33,2,southwest,1
+FSV Mainz 05,2.20,1.30,2,southwest,0
+TuS Neuendorf,2.70,2.07,2,southwest,0
+Wormatia Worms,1.73,1.37,2,southwest,0
+Saar 05 Saarbrücken,1.47,1.30,2,southwest,0
+VfR Frankenthal,1.83,1.67,2,southwest,0
+SV 06 Völklingen,1.73,1.93,2,southwest,0
+SV Alsenborn,1.90,1.83,2,southwest,1
+SpVgg Weisenau,2.03,2.20,2,southwest,0
+Südwest Ludwigshafen,1.53,1.67,2,southwest,1
+Phönix Bellheim,1.20,2.00,2,southwest,0
+Eintracht Trier,1.47,1.63,2,southwest,0
+Ludwigshafener SC,1.43,2.03,2,southwest,0
+BSC Oppau,1.23,2.80,2,southwest,0
+TSC Zweibrücken,1.37,2.70,2,southwest,0
+FC Schweinfurt 05,2.18,1.15,2,south,0
+Kickers Offenbach,2.29,1.41,2,south,1
+SV Waldhof Mannheim,2.29,1.76,2,south,0
+SpVgg Fürth,2.06,1.53,2,south,0
+Stuttgarter Kickers,1.91,1.53,2,south,0
+KSV Hessen Kassel,2.06,1.82,2,south,0
+1. FC Pforzheim,1.41,1.35,2,south,0
+SSV Reutlingen 05,1.76,1.47,2,south,0
+Bayern Hof,2.09,1.85,2,south,0
+Opel Rüsselsheim,1.71,1.79,2,south,0
+Schwaben Augsburg,1.94,1.82,2,south,1
+VfR Mannheim,1.62,1.76,2,south,0
+SV Darmstadt 98,1.59,2.09,2,south,0
+FSV Frankfurt,1.79,2.24,2,south,0
+Freiburger FC,1.62,1.74,2,south,1
+ESV Ingolstadt,1.85,2.21,2,south,0
+SpVgg Weiden,1.50,1.88,2,south,0
+VfR Pforzheim,1.32,3.59,2,south,0

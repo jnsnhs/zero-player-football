@@ -1,0 +1,19 @@
+from os import path
+
+PROJECT_DIR = path.dirname(path.abspath(__file__))
+STATIC_DIR = path.join(PROJECT_DIR, "static")
+
+DEFAULT_ENCODING = 'utf8'
+CURRENT_DATABASE = None
+TEXT_PARSER_PREFIX = '\n> '
+PATH_CLUB_DATA = './static/club_data_1963.csv'
+PATH_TO_LAST_NAMES = "./static/"
+FIRST_DECADE = 1900
+LAST_DECADE = 2020
+COUNT_OF_CLUBS = 0
+
+CURRENT_YEAR = 1963
+
+AVG_GOALS_PER_GAME = 3.6
+AVG_REFEREE_AGE = 38
+REFEREE_TO_CLUB_RATIO = 0.6
