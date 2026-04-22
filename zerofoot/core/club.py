@@ -45,7 +45,7 @@ class Club:
         )
         self.ground: Ground = Ground(
             current_year=current_year,
-            name="Stadion",
+            name="Stadion an der Hauptstraße",
             league_level=league_level
         )
 
@@ -65,7 +65,7 @@ class Club:
     def __str__(self) -> str:
         lines = f"{self.name}\n"
         lines += f"League Level: {self.league_level}\n"
-        lines += f"Manager: {self.manager}\n"
-        lines += f"Ground: {self.ground}\n"
-        lines += f"Squad:\n{self.squad}"
+        lines += f"Trainer: {self.manager}\n"
+        lines += f"Spielstätte: {self.ground}\n"
+        lines += f"\nMannschaft:\n\n{self.squad}"
         return lines

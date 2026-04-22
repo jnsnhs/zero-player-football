@@ -3,3 +3,5 @@ __pycache__
 /documents
 /names_tool
 README.MD
+*.sav
+/sandbox

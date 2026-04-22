@@ -1,7 +1,6 @@
-from sys import exit
-
 from ...cli.screens.screen import Screen
-from ...cli.screens.save_game import SaveGameScreen
+from ...cli.ingame.main import GameMainScreen
+from...defaults import PROMPT_PREFIX
 
 
 class NewGameScreen(Screen):
@@ -9,16 +8,17 @@ class NewGameScreen(Screen):
     def __init__(self, app) -> None:
         super().__init__()
         self.app = app
+        self.heading = "Wählen Sie ein Szenario"
         self.choose_scenario()
 
     def choose_scenario(self):
         self.clear_screen()
-        print("Wählen Sie ein Szenario...\n")
-        print("[1] WESTDEUTSCHLAND, 1965\n")
-        print("")
+        self.print_heading(self.heading)
+        print("Wo und wann soll das Spiel beginnen?\n\n")
+        print("[1]  WESTDEUTSCHLAND, 1965\n")
         # print("[2] ITALIEN, 1980\n")
-        # print("[3] DEUTSCHLAND, 1995\n")
-        user_input = input("> ")
+        # print("[3] DEUTSCHLAND, 1995\n\n")
+        user_input = input(PROMPT_PREFIX).casefold()
         if user_input in ["1"]:
             self.clear_screen()
             print("Datenbank wird erzeugt...\n\n")
@@ -38,16 +38,17 @@ class NewGameScreen(Screen):
                 print(f"[{listed_clubs.index(club)}] {club.name}")
             print("")
         print("Welchen Verein wollen Sie verfolgen?:\n")
-        user_input = input("> ")
+        user_input = input(PROMPT_PREFIX)
         try:
             choice = listed_clubs[int(user_input)]
         except Exception:
             self.choose_club(self.app.database)
         else:
-            self.confirm_club_choice(choice)
+            self.preview_club(choice)
 
-    def confirm_club_choice(self, club):
+    def preview_club(self, club):
         self.clear_screen()
+        self.print_heading(club.name)
         print(club)
         user_input = input("Soll es dieser Verein sein? (j/n)")
         if user_input.casefold() in ["j", "ja", "y", "yes"]:
@@ -56,19 +57,14 @@ class NewGameScreen(Screen):
             self.choose_club(self.app.database)
         else:
             self.clear_screen()
-            self.confirm_club_choice(club)
+            self.preview_club(club)
 
     def create_user(self, database, club):
         database.user.club = club
-        while True:
-            self.clear_screen()
-            print(f"Sie sind nun Anhänger von {club.name} und "
-                  "werden die Geschicke dieses Vereins in der "
-                  f"Spielzeit {"XXX"} verfolgen.", end="\n\n")
-            print("[1] Spielstand speichern")
-            print("[2] Spiel beenden")
-            user_input = input("\n> ")
-            if user_input == "1":
-                SaveGameScreen(database)
-            elif user_input == "2":
-                exit(0)
+        self.clear_screen()
+        print(f"Sie sind nun Anhänger von {club.name} und "
+              "werden die Geschicke dieses Vereins in der "
+              f"Spielzeit {"XXX"} verfolgen.", end="\n\n")
+        print("Weiter mit <ENTER>...\n")
+        input(PROMPT_PREFIX)
+        GameMainScreen(database)
