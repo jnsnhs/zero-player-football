@@ -1,11 +1,12 @@
 from csv import DictReader
 from os import path
+from datetime import date
 
-from .cli.screens.main_menu import MainMenuScreen
-from .core.club import Club, Region
+from .views.mainmenu.main_menu import MainMenuScreen
+from .core.club import Club
 from .core.referee import Referee
 from .core.league import League
-from .core.cup import Cup
+from .core.scenario import Scenario
 
 from .defaults import STATIC_DIR, REFEREE_TO_CLUB_RATIO
 
@@ -14,15 +15,9 @@ class Main:
 
     def __init__(self) -> None:
         self.database = None
-        self.settings = None
-        self.controller = None
 
     def run(self) -> None:
-        # self.database.print_leagues()
         MainMenuScreen(self)
-        # print("Spiel wird gestartet mit: \n", self.db)
-        # input("any key to quit")
-        # self.controller.run()
 
     def create_database(self, year):
         self.database = Database(year)
@@ -36,21 +31,24 @@ class User:
 
 class Database:
 
-    def __init__(self, year: int) -> None:
+    def __init__(self, scenario: Scenario) -> None:
         self.user: User = User()
-        self.starting_year: int = year
-        self.clubs: list[Club] = self.create_clubs(self.starting_year)
+        self.starting_date: date = date.fromisoformat(
+            scenario.STARTING_DATE)
+        self.clubs: list[Club] = self.create_clubs(
+            scenario=scenario)
+        self.leagues: list[League] = self.create_leagues(
+            scenario=scenario,
+            clubs=self.clubs)
         self.referees = self.create_referees(
             count=round(len(self.clubs) * REFEREE_TO_CLUB_RATIO),
-            current_year=self.starting_year)
-        self.leagues: list[League] = self.create_leagues(
-            year=self.starting_year,
-            clubs=self.clubs)
-        # self.cup = self.create_cup(self.starting_year, self.clubs)
+            scenario=scenario)
 
-    def create_clubs(self, current_year: int) -> list[Club]:
+    def create_clubs(self, scenario: Scenario) -> list[Club]:
         list_of_clubs = []
-        file_name = f"clubs_de_{current_year}.csv"
+        country_code: str = scenario.COUNTRY_CODE
+        current_year: int = date.fromisoformat(scenario.STARTING_DATE).year
+        file_name = f"clubs_{country_code}_{current_year}.csv"
         path_to_file = path.join(STATIC_DIR, "clubs", file_name)
         with open(path_to_file, "r", encoding="utf8") as file:
             raw_club_data = DictReader(file)
@@ -66,29 +64,18 @@ class Database:
                 list_of_clubs.append(club)
         return list_of_clubs
 
-    def create_referees(self, count: int, current_year: int) -> list[Referee]:
-        list_of_referees = []
-        for i in range(count):
-            list_of_referees.append(Referee(current_year))
-        return list_of_referees
-
-    def create_leagues(self, year: int, clubs: list[Club]) -> list[League]:
-        league_data_de_1965 = [
-            {"level": 1, "name": "Bundesliga", "clubs": 18,
-             "regions": [Region.N, Region.W, Region.SW, Region.S, Region.NE]},
-            {"level": 2, "name": "Regionalliga Nord", "regions": [Region.N]},
-            {"level": 2, "name": "Regionalliga West", "regions": [Region.W]},
-            {"level": 2, "name": "Regionalliga Südwest",
-             "regions": [Region.SW]},
-            {"level": 2, "name": "Regionalliga Süd", "regions": [Region.S]},
-            {"level": 2, "name": "Regionalliga Berlin", "regions": [Region.NE]}
-        ]
+    def create_leagues(
+        self,
+        scenario: Scenario,
+        clubs: list[Club]
+    ) -> list[League]:
         leagues = []
-        for league in league_data_de_1965:
+        for league in scenario.LEAGUES:
             level = league["level"]
+            regions = [i.casefold() for i in league["regions"]]
             participants = [
                 club for club in clubs if club.league_level == level and
-                club.region in league["regions"]]
+                club.region in regions]
             leagues.append(League(
                 name=league["name"],
                 level=league["level"],
@@ -97,14 +84,11 @@ class Database:
             ))
         return leagues
 
-    def create_cup(self, year: int, clubs: list[Club]) -> Cup:
-        participants = [
-            club for club in clubs if club.qualified_for_cup is True]
-        cup = Cup(
-            name="Vereinspokal",
-            clubs=participants
-        )
-        return cup
+    def create_referees(self, count: int, scenario: Scenario) -> list[Referee]:
+        list_of_referees = []
+        for i in range(count):
+            list_of_referees.append(Referee(scenario))
+        return list_of_referees
 
     def print_leagues(self) -> None:
         print(f"\nLeagues ({len(self.leagues)})\n")

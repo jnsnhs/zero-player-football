@@ -1,13 +1,13 @@
 import sys
 
-from .screen import Screen
+from ..view import View
 from .load_game import LoadGameScreen
 from .save_game import SaveGameScreen
 from .new_game import NewGameScreen
-from ...cli.ingame.main import GameMainScreen
+from ..ingame.main import GameMainScreen
 
 
-class MainMenuScreen(Screen):
+class MainMenuScreen(View):
 
     def __init__(self, app) -> None:
         super().__init__()
@@ -23,20 +23,19 @@ class MainMenuScreen(Screen):
         print(
             "\n[1]  Neues Spiel starten\n\n"
             "[2]  Altes Spiel fortsetzen\n\n"
-            "[3]  Programm beenden"
+            "[3]  Programm beenden\n"
             )
         user_input = input(self.PROMPT_PREFIX)
         match user_input:
             case "1":
                 self.new_game()
-                self.__init__(app)
             case "2":
                 self.load_game()
-                self.__init__(app)
             case "3":
                 self.quit_game()
             case _:
-                self.__init__(self.app)
+                pass
+        self.__init__(app)
 
     def pause_menu(self, app):
         print(
@@ -44,33 +43,29 @@ class MainMenuScreen(Screen):
             "[2]  Spielstand speichern\n\n"
             "[3]  Spielstand laden\n\n"
             "[4]  Neues Spiel starten\n\n\n"
-            "[5]  Programm beenden"
+            "[5]  Programm beenden\n"
             )
         user_input = input(self.PROMPT_PREFIX)
         match user_input:
             case "1":
                 GameMainScreen(self.app.database)
-                self.__init__(app)
             case "2":
                 SaveGameScreen(app.database)
-                self.__init__(app)
             case "3":
                 self.load_game()
-                self.__init__(app)
             case "4":
                 self.new_game()
-                self.__init__(app)
             case "5":
                 self.quit_game()
-                self.__init__(app)
             case _:
-                self.__init__(self.app)
+                pass
+        self.__init__(app)
 
     def quit_game(self) -> None:
         self.clear_screen()
         self.print_heading("Hauptmenü")
         if self.game_running:
-            print("Möchten Sie wirklich das laufende Spiel beenden? (j/n)")
+            print("\nMöchten Sie wirklich das laufende Spiel beenden? (j/n)")
             user_input = input(self.PROMPT_PREFIX)
             if user_input in ["n"]:
                 self.__init__(self.app)
@@ -84,7 +79,7 @@ class MainMenuScreen(Screen):
         self.clear_screen()
         self.print_heading("Hauptmenü")
         if self.game_running:
-            print("Möchten Sie wirklich ein neues Spiel starten? (j/n)")
+            print("\nMöchten Sie wirklich ein neues Spiel starten? (j/n)")
             user_input = input(self.PROMPT_PREFIX)
             if user_input in ["n"]:
                 self.__init__(self.app)
@@ -96,7 +91,7 @@ class MainMenuScreen(Screen):
         self.clear_screen()
         self.print_heading("Hauptmenü")
         if self.game_running:
-            print("Möchten Sie wirklich einen Spielstand laden? (j/n)")
+            print("\nMöchten Sie wirklich einen Spielstand laden? (j/n)")
             user_input = input(self.PROMPT_PREFIX)
             if user_input in ["n"]:
                 self.__init__(self.app)

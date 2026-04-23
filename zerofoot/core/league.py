@@ -2,7 +2,7 @@
 from random import shuffle
 from uuid import uuid4
 
-from ..core.club import Club, Region
+from ..core.club import Club
 from ..core.matchday import Matchday
 
 
@@ -12,13 +12,13 @@ class League():
         self,
         name: str,
         level: int,
-        regions: list[Region],
+        regions: list[str],
         clubs: list[Club]
     ) -> None:
         self.id = uuid4()
         self.name = name
         self.level: int = level
-        self.regions: list[Region] = regions
+        self.regions: list[str] = [i.casefold() for i in regions]
         self.clubs: list[Club] = clubs
         self.matchdays: list[Matchday] = self.create_matchdays(clubs)
         self.days_played: int = 0
@@ -27,7 +27,7 @@ class League():
         """
         According to "Harmonischer Schlüsselplan":\n
         https://de.wikipedia.org/wiki/Spielplan_(Sport)\n
-        Works only with a even number of clubs!
+        Works only with an even number of clubs!
         """
         if len(clubs) % 2 != 0:
             raise Exception("Unable to create fixtures with an uneven"

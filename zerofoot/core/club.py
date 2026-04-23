@@ -1,4 +1,3 @@
-from enum import Enum
 from uuid import uuid4
 
 from ..core.manager import Manager
@@ -6,12 +5,12 @@ from ..core.squad import Squad
 from ..core.ground import Ground
 
 
-class Region(Enum):
-    N = "Nord"
-    W = "West"
-    SW = "Südwest"
-    S = "Süd"
-    NE = "Nordost"
+# class Region(Enum):
+#     N = "Nord"
+#     W = "West"
+#     SW = "Südwest"
+#     S = "Süd"
+#     NE = "Nordost"
 
 
 class Club:
@@ -30,7 +29,7 @@ class Club:
         self.name: str = name
         self.league_level: int = league_level
         self.qualified_for_cup: bool = qualified_for_cup
-        self.region: Region = self.set_region(region)
+        self.region: str = self.set_region(region)
         self.manager: Manager = Manager(
             current_year=current_year,
             league_level=league_level,
@@ -49,23 +48,24 @@ class Club:
             league_level=league_level
         )
 
-    def set_region(self, region: str) -> Region:
+    def set_region(self, region: str) -> str:
         match region:
             case "north":
-                return Region.N
+                return "n"
             case "northeast":
-                return Region.NE
+                return "ne"
             case "south":
-                return Region.S
+                return "s"
             case "southwest":
-                return Region.SW
+                return "sw"
             case _:
-                return Region.W
+                return "w"
 
     def __str__(self) -> str:
-        lines = f"{self.name}\n"
-        lines += f"League Level: {self.league_level}\n"
-        lines += f"Trainer: {self.manager}\n"
-        lines += f"Spielstätte: {self.ground}\n"
+        lines = ""
+        # lines += f"{self.name}\n"
+        # lines += f"League Level: {self.league_level}\n"
+        lines += f"Trainer:\n\n{self.manager}\n"
+        lines += f"\nSpielstätte:\n\n{self.ground}\n"
         lines += f"\nMannschaft:\n\n{self.squad}"
         return lines

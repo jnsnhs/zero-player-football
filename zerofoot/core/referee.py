@@ -1,29 +1,32 @@
 from random import gauss, triangular
 from ..core.person import Person, Nationality
+from ..core.scenario import Scenario
 
 
 class Referee(Person):
 
     def __init__(
             self,
-            current_year: int
+            scenario: Scenario
     ) -> None:
         super().__init__(
-            birthyear=self.set_birthyear(current_year),
-            nationality=self.set_nationality(current_year)
+            birthyear=self.set_birthyear(scenario.STARTING_YEAR),
+            nationality=self.set_nationality(scenario.STARTING_YEAR)
         )
         self.expertise: int = int(triangular(1, 13, 7))
         self.strictness: int = int(triangular(1, 13, 7))
 
     def set_birthyear(self, current_year) -> int:
-        # if current_year == 1965:
+        # Für Westdeutschland 1965
+        # TODO Von scenario abhängig machen
         avg_age = 38
         age = int(gauss(avg_age, 2))
         age = age if age >= 18 else 18
         return current_year - age
 
     def set_nationality(self, current_year) -> Nationality:
-        # if current_year == 1965:
+        # Für Westdeutschland 1965
+        # TODO von Scenario abhängig machen
         return Nationality.DE
 
     def __str__(self) -> str:

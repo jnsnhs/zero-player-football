@@ -1,0 +1,74 @@
+{
+    "scenario":
+        {
+            "year": 1965,
+            "country": "Westdeutschland",
+            "heading": "Die politische Aufstockung",
+            "description": "Erstmals spielen 18 Vereine um die Meisterschaft. Da ein Hauptstadt-Club nur aus Polit-Gründen mitkickt, regiert auf dem Rasen die rustikale Grätsche. Ein Sieg bringt zwei Zähler, die Bälle wiegen gefühlt eine Tonne und Taktik ist etwas für Träumer. Willkommen in der Ära der harten Männer, schweren Stiefel und Lederbälle!"
+        },
+    "country_name": "Westdeutschland",
+    "iso_country_code": "de",
+    "regions": ["N", "W", "SW", "S", "NE"],
+    "starting_date": "1965-06-01",
+    "avg_goals_per_game": 3.5,
+    "points_per_win": 3,
+    "leagues": [
+        {
+            "level": 1,
+            "name": "Erste Liga",
+            "regions": ["N", "W", "SW", "S", "NE"],
+            "promotion_ranks": 0,
+            "relegation_ranks": 3
+        },
+        {
+            "level": 2,
+            "name": "Nord-Liga",
+            "regions": ["N"],
+            "promotion_ranks": 1,
+            "relegation_ranks": 2
+        },
+        {
+            "level": 2,
+            "name": "West-Liga",
+            "regions": ["W"],
+            "promotion_ranks": 1,
+            "relegation_ranks": 2
+        },
+        {
+            "level": 2,
+            "name": "Südwest-Liga",
+            "regions": ["SW"]
+        },
+        {
+            "level": 2,
+            "name": "Süd-Berlin",
+            "regions": ["S"]
+        },
+        {
+            "level": 2,
+            "name": "Berlin-Liga",
+            "regions": ["NE"],
+            "promotion_ranks": 1,
+            "relegation_ranks": 2
+        }
+    ],
+    "player": {
+        "avg_age": 26,
+        "nationalities": {
+            "iso_codes": ["de", "rs", "nl", "at", "tr"],
+            "weights": [317, 3, 2, 1, 1]
+        }
+    },
+    "manager": {
+        "age_min": 35,
+        "age_avg": 46,
+        "age_max": 60,
+        "nationality": {
+            "iso_codes": ["de"],
+            "weights": [1]
+        }
+    },
+    "referee": {
+        "avg_age": 38
+    }
+}

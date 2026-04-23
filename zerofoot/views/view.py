@@ -1,9 +1,9 @@
 import os
 
-from ...defaults import PROMPT_PREFIX, SCREEN_WIDTH
+from ..defaults import PROMPT_PREFIX, SCREEN_WIDTH
 
 
-class Screen:
+class View:
 
     def __init__(self) -> None:
         self.PROMPT_PREFIX = PROMPT_PREFIX
@@ -24,6 +24,5 @@ class Screen:
         PADDING = 1
         print()
         print(" " * PADDING + heading.upper() + " " * PADDING)
-        # print("─" * (PADDING * 2 + len(heading)), end="\n\n")
         self.print_line()
         print()

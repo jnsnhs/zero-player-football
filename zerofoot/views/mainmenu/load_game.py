@@ -1,12 +1,12 @@
 from os import listdir
 import pickle
 
-from .screen import Screen
-from ...cli.ingame.main import GameMainScreen
+from ..view import View
+from ..ingame.main import GameMainScreen
 from ...defaults import PROMPT_PREFIX
 
 
-class LoadGameScreen(Screen):
+class LoadGameScreen(View):
 
     def __init__(self, app) -> None:
         super().__init__()

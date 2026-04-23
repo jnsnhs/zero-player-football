@@ -1,16 +1,18 @@
-from ...cli.screens.screen import Screen
+from ..view import View
 
 
-class GameMainScreen(Screen):
+class GameMainScreen(View):
 
     def __init__(self, database) -> None:
         super().__init__()
         self.database = database
-        print("INGAME MAIN SCREEN\n")
-        print("[1] Verein ansehen")
-        print("[2] Tabelle ansehen\n")
+        self.print_heading("Sonntag, 1. Juni 1965")
+        print(f"\nSie sind Anhänger von {database.user.club.name} und\n"
+              "fiebern dem nächsten Spieltag entgegen.\n")
+        print("\n[1] Verein ansehen\n")
+        print("[2] Tabelle ansehen\n\n")
         print("[0] Hauptmenü")
-        user_input = input("\n> ").strip()
+        user_input = input(self.PROMPT_PREFIX).strip()
         match user_input:
             case "1":
                 ClubSummaryScreen(database)
@@ -24,19 +26,22 @@ class GameMainScreen(Screen):
                 self.__init__(database)
 
 
-class DomesticLeagueTableScreen(Screen):
+class DomesticLeagueTableScreen(View):
 
     def __init__(self, database) -> None:
         super().__init__()
         self.database = database
         print("Hier wird die Tabelle der Liga zu sehen sein")
-        input("Zurück mit <ENTER>...")
+        print("Zurück mit <ENTER>...")
+        input(self.PROMPT_PREFIX)
 
 
-class ClubSummaryScreen(Screen):
+class ClubSummaryScreen(View):
 
     def __init__(self, database) -> None:
         super().__init__()
         self.database = database
+        self.print_heading(database.user.club.name)
         print(database.user.club)
-        input("Zurück mit <ENTER>...")
+        print("Zurück mit <ENTER>...")
+        input(self.PROMPT_PREFIX)

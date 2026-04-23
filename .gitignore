@@ -5,3 +5,4 @@ __pycache__
 README.MD
 *.sav
 /sandbox
+/static/scenarios/*.txt
