@@ -22,7 +22,9 @@ public class PlayerGenerator {
             Gender.MALE,
             mainPosition,
             randomAltPositions(mainPosition),
-            randomSkill(leagueLevel, mainPosition, attackingBonus, defendingBonus)
+            randomSkill(leagueLevel, mainPosition, attackingBonus, defendingBonus),
+            randomMotivation(),
+            randomFitness()
         );
     }
 
@@ -104,6 +106,16 @@ public class PlayerGenerator {
         int maxPlayerAge = 39;
         return (int) RndHelper.triangularDistribution(
             minPlayerAge, maxPlayerAge, avgPlayerAge);
+    }
+
+    private static int randomMotivation() {
+        int result = (int) new Random().nextGaussian(100, 5);
+        return result <= 120 ? result : 120;
+    }
+
+    private static int randomFitness() {
+        int result = (int) new Random().nextGaussian(10, 2);
+        return result <= 20 ? result : 20;
     }
 
     private static Position[] randomAltPositions(Position mainPosition) {

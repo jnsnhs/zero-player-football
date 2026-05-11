@@ -7,6 +7,8 @@ public class Player extends Person {
     private Position mainPosition;
     private Position[] altPositions;
     private int skill;
+    private int motivation;
+    private int fitness;
     
     public Player(
         Nationality nationality,
@@ -14,22 +16,16 @@ public class Player extends Person {
         Gender gender,
         Position mainPosition,
         Position[] altPositions,
-        int skill
+        int skill,       // 1-12
+        int motivation,  // 0-120
+        int fitness      // 0-20
     ) {
         super(nationality, birthYear, gender);
-        setMainPosition(mainPosition);
-        setAltPositions(altPositions);
-        setSkill(skill);
-    }
-
-    private void setMainPosition(Position mainPosition) {
         this.mainPosition = mainPosition;
-    }
-    public void setAltPositions(Position[] altPositions) {
         this.altPositions = altPositions;
-    }
-    public void setSkill(int skill) {
         this.skill = skill;
+        this.motivation = motivation;
+        this.fitness = fitness;
     }
 
     public Position getMainPosition() {
@@ -40,6 +36,23 @@ public class Player extends Person {
     }
     public int getSkill() {
         return skill;
+    }
+    public int getMotivation() {
+        return motivation;
+    }
+    public int getFitness() {
+        return fitness;
+    }
+
+    public double calcActualSkill() {
+        int motivationalFactor;
+        if (motivation > 110) {
+            motivationalFactor = (220 - motivation) / 100;
+        } else {
+            motivationalFactor = motivation / 100;
+        }
+        double result = (skill - 1 + fitness / 10) * motivationalFactor;
+        return result <= 14.0 ? result : 14.0;
     }
 
     public String altPositionsToString() {
