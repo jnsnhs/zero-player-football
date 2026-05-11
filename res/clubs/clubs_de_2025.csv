@@ -1,0 +1,147 @@
+name,avg_gf,avg_ga,avg_goals_game,league_lvl,region
+Bayern München,3.55,1.06,3.18,1,SOUTH
+Borussia Dortmund,2.06,1.03,3.18,1,WEST
+RB Leipzig,1.97,1.30,3.18,1,NORTHEAST
+VfB Stuttgart,2.09,1.42,3.18,1,SOUTH
+TSG Hoffenheim,1.97,1.45,3.18,1,SOUTH
+Bayer 04 Leverkusen,2.03,1.39,3.18,1,WEST
+SC Freiburg,1.36,1.61,3.18,1,SOUTH
+Eintracht Frankfurt,1.79,1.91,3.18,1,SOUTH
+FC Augsburg,1.36,1.73,3.18,1,SOUTH
+1. FSV Mainz 05,1.24,1.52,3.18,1,SOUTHWEST
+Bor. Mönchengladbach,1.15,1.61,3.18,1,WEST
+Hamburger SV,1.09,1.55,3.18,1,NORTH
+1. FC Union Berlin,1.12,1.73,3.18,1,NORTHEAST
+1. FC Köln,1.42,1.67,3.18,1,WEST
+Werder Bremen,1.12,1.76,3.18,1,NORTH
+VfL Wolfsburg,1.27,2.06,3.18,1,NORTH
+FC St. Pauli,0.85,1.73,3.18,1,NORTH
+1. FC Heidenheim,1.15,2.09,3.18,1,SOUTH
+FC Schalke 04,1.48,0.94,2.92,2,WEST
+SV Elversberg,1.82,1.18,2.92,2,SOUTHWEST
+Hannover 96,1.73,1.24,2.92,2,NORTH
+SC Paderborn 07,1.73,1.36,2.92,2,WEST
+SV Darmstadt 98,1.73,1.30,2.92,2,SOUTH
+Hertha BSC,1.36,1.12,2.92,2,NORTHEAST
+1. FC Kaiserslautern,1.55,1.42,2.92,2,SOUTHWEST
+1. FC Nürnberg,1.33,1.27,2.92,2,SOUTH
+Karlsruher SC,1.58,1.88,2.92,2,SOUTH
+VfL Bochum,1.42,1.39,2.92,2,WEST
+Holstein Kiel,1.30,1.39,2.92,2,NORTH
+1. FC Magdeburg,1.58,1.73,2.92,2,NORTHEAST
+Dynamo Dresden,1.58,1.58,2.92,2,NORTHEAST
+Fortuna Düsseldorf,1.00,1.48,2.92,2,WEST
+Eintracht Braunschweig,1.09,1.61,2.92,2,NORTH
+Arminia Bielefeld,1.42,1.52,2.92,2,WEST
+SpVgg Greuther Fürth,1.36,2.03,2.92,2,SOUTH
+Preußen Münster,1.15,1.76,2.92,2,WEST
+VfL Osnabrück,1.68,0.84,3.14,3,NORTH
+Energie Cottbus,1.92,1.38,3.14,3,NORTHEAST
+MSV Duisburg,1.76,1.30,3.14,3,WEST
+Rot-Weiss Essen,2.03,1.73,3.14,3,WEST
+Hansa Rostock,1.89,1.24,3.14,3,NORTHEAST
+SC Verl,2.14,1.30,3.14,3,WEST
+Alemannia Aachen,1.81,1.51,3.14,3,WEST
+TSV 1860 München,1.46,1.35,3.14,3,SOUTH
+SV Waldhof Mannheim,1.57,1.81,3.14,3,SOUTH
+FC Viktoria Köln,1.35,1.32,3.14,3,WEST
+SV Wehen Wiesbaden,1.41,1.41,3.14,3,SOUTH
+Jahn Regensburg,1.46,1.54,3.14,3,SOUTH
+FC Ingolstadt 04,1.62,1.49,3.14,3,SOUTH
+VfB Stuttgart II,1.46,1.76,3.14,3,SOUTH
+1. FC Saarbrücken,1.24,1.35,3.14,3,SOUTHWEST
+TSG Hoffenheim II,1.68,1.81,3.14,3,SOUTH
+TSV Havelse,1.49,2.24,3.14,3,NORTH
+SSV Ulm 1846 Fußball,1.27,2.03,3.14,3,SOUTH
+Erzgebirge Aue,1.27,1.84,3.14,3,NORTHEAST
+1. FC Schweinfurt 05,0.97,2.22,3.14,3,SOUTH
+Carl Zeiss Jena,1.91,1.06,2.96,4,NORTHEAST
+1. FC Lok Leipzig,1.79,0.85,2.96,4,NORTHEAST
+Rot-Weiß Erfurt,2.06,1.36,2.96,4,NORTHEAST
+FSV Zwickau,1.55,1.33,2.96,4,NORTHEAST
+Hallescher FC,1.76,1.09,2.96,4,NORTHEAST
+VSG Altglienicke,1.48,1.21,2.96,4,NORTHEAST
+Chemnitzer FC,1.64,1.52,2.96,4,NORTHEAST
+BFC Preussen,1.52,1.64,2.96,4,NORTHEAST
+1. FC Magdeburg II,1.76,1.42,2.96,4,NORTHEAST
+FSV Luckenwalde,1.06,1.30,2.96,4,NORTHEAST
+BSG Chemie Leipzig,1.30,1.45,2.96,4,NORTHEAST
+Hertha BSC II,1.36,1.73,2.96,4,NORTHEAST
+SV Babelsberg 03,1.85,1.91,2.96,4,NORTHEAST
+Greifswalder FC,1.12,1.27,2.96,4,NORTHEAST
+BFC Dynamo,1.27,1.45,2.96,4,NORTHEAST
+ZFC Meuselwitz,1.30,1.82,2.96,4,NORTHEAST
+FC Eilenburg,1.06,1.91,2.96,4,NORTHEAST
+Hertha Zehlendorf,0.85,2.30,2.96,4,NORTHEAST
+1. FC Nürnberg II,2.00,1.00,2.96,4,SOUTH
+Würzburger Kickers,2.12,0.73,2.96,4,SOUTH
+SpVgg Unterhaching,2.06,0.91,2.96,4,SOUTH
+FV Illertissen,2.12,1.36,2.96,4,SOUTH
+VfB Eichstätt,1.45,1.09,2.96,4,SOUTH
+DJK Vilzing,1.33,1.27,2.96,4,SOUTH
+Wacker Burghausen,1.39,1.39,2.96,4,SOUTH
+TSV Aubstadt,1.36,1.36,2.96,4,SOUTH
+SpVgg Ansbach,1.61,1.85,2.96,4,SOUTH
+Bayern München II *,1.70,1.58,2.96,4,SOUTH
+TSV Buchbach,1.61,2.09,2.96,4,SOUTH
+FC Memmingen,1.27,1.42,2.96,4,SOUTH
+SpVgg Bayreuth,1.09,1.48,2.96,4,SOUTH
+FC Augsburg II,1.12,1.42,2.96,4,SOUTH
+Schwaben Augsburg,1.15,1.76,2.96,4,SOUTH
+SpVgg Greuther Fürth II,1.36,1.67,2.96,4,SOUTH
+Viktoria Aschaffenburg,0.94,2.00,2.96,4,SOUTH
+SpVgg Hankofen-Hailing,0.88,2.18,2.96,4,SOUTH
+SG Sonnenhof Großaspach,2.61,1.24,3.36,4,SOUTHWEST
+SGV Freiberg Fußball,1.97,1.06,3.36,4,SOUTHWEST
+FSV Frankfurt,1.88,1.42,3.36,4,SOUTHWEST
+SV Sandhausen,1.58,1.61,3.36,4,SOUTHWEST
+FC 08 Homburg,2.06,1.24,3.36,4,SOUTHWEST
+TSV Steinbach Haiger,2.24,1.70,3.36,4,SOUTHWEST
+1. FSV Mainz 05 II,1.58,1.24,3.36,4,SOUTHWEST
+Hessen Kassel,1.79,1.52,3.36,4,SOUTHWEST
+Stuttgarter Kickers,1.48,1.33,3.36,4,SOUTHWEST
+SG Barockstadt Fulda-Lehnerz,1.52,1.27,3.36,4,SOUTHWEST
+SC Freiburg II,2.12,2.21,3.36,4,SOUTHWEST
+FC-Astoria Walldorf,1.82,1.94,3.36,4,SOUTHWEST
+Eintracht Trier,1.39,1.58,3.36,4,SOUTHWEST
+Kickers Offenbach,1.70,1.67,3.36,4,SOUTHWEST
+Bayern Alzenau,1.27,2.15,3.36,4,SOUTHWEST
+TSV Schott Mainz,1.21,2.45,3.36,4,SOUTHWEST
+TSG Balingen,1.12,2.52,3.36,4,SOUTHWEST
+Bahlinger SC,0.97,2.15,3.36,4,SOUTHWEST
+Fortuna Köln,2.09,0.85,3.06,4,WEST
+Rot-Weiß Oberhausen,1.76,1.15,3.06,4,WEST
+FC Schalke 04 II,2.18,1.48,3.06,4,WEST
+Bor. Mönchengladbach II,1.79,1.27,3.06,4,WEST
+Borussia Dortmund II,1.97,1.42,3.06,4,WEST
+FC Gütersloh,1.55,1.15,3.06,4,WEST
+Sportfreunde Siegen,1.79,1.27,3.06,4,WEST
+1. FC Köln II,1.61,1.73,3.06,4,WEST
+Sportfreunde Lotte,1.30,1.61,3.06,4,WEST
+SC Paderborn 07 II,1.52,1.15,3.06,4,WEST
+Bonner SC,1.12,1.27,3.06,4,WEST
+Fortuna Düsseldorf II,1.36,1.70,3.06,4,WEST
+1. FC Bocholt,1.42,1.67,3.06,4,WEST
+VfL Bochum II,1.45,1.82,3.06,4,WEST
+SV Rödinghausen,1.39,1.85,3.06,4,WEST
+SC Wiedenbrück,1.12,1.97,3.06,4,WEST
+Wuppertaler SV,1.09,2.09,3.06,4,WEST
+SSVg Velbert,1.03,2.09,3.06,4,WEST
+SV Meppen,3.00,1.00,3.52,5,NORTH
+SV Drochtersen/Assel,2.45,1.39,3.52,5,NORTH
+VfB Oldenburg,2.48,1.27,3.52,5,NORTH
+SSV Jeddeloh II,2.39,1.45,3.52,5,NORTH
+Bremer SV,1.48,1.12,3.52,5,NORTH
+1. FC Phönix Lübeck,1.42,1.21,3.52,5,NORTH
+Hannover 96 II,1.85,1.45,3.52,5,NORTH
+Kickers Emden,1.85,1.61,3.52,5,NORTH
+SC Weiche Flensburg 08,2.06,1.91,3.52,5,NORTH
+VfB Lübeck,1.64,1.82,3.52,5,NORTH
+Hamburger SV II,1.55,1.45,3.52,5,NORTH
+Werder Bremen II,1.70,2.06,3.52,5,NORTH
+FSV Schöningen,1.61,2.39,3.52,5,NORTH
+HSC Hannover,1.30,2.45,3.52,5,NORTH
+Eintracht Norderstedt,1.45,2.21,3.52,5,NORTH
+FC St. Pauli II,1.06,2.03,3.52,5,NORTH
+Altona 93,1.30,2.67,3.52,5,NORTH
+BW Lohne,1.12,2.21,3.52,5,NORTH

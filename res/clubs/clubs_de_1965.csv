@@ -1,0 +1,104 @@
+name,avg_gf,avg_ga,avg_goals_game,league_lvl,region
+TSV 1860 München,2.35,1.18,3.22,1,SOUTH
+Borussia Dortmund,2.06,1.06,3.22,1,WEST
+FC Bayern München,2.09,1.12,3.22,1,SOUTH
+Werder Bremen,2.24,1.18,3.22,1,NORTH
+1. FC Köln,2.18,1.21,3.22,1,WEST
+1. FC Nürnberg,1.59,1.26,3.22,1,SOUTH
+Eintracht Frankfurt,1.88,1.35,3.22,1,SOUTH
+Meidericher SV,2.06,1.41,3.22,1,WEST
+Hamburger SV,1.88,1.53,3.22,1,NORTH
+Eintracht Braunschweig,1.44,1.44,3.22,1,NORTH
+VfB Stuttgart,1.24,1.41,3.22,1,SOUTH
+Hannover 96,1.74,1.68,3.22,1,NORTH
+Borussia Mönchengladbach,1.68,2.00,3.22,1,WEST
+FC Schalke 04,0.97,1.62,3.22,1,WEST
+1. FC Kaiserslautern,1.24,1.91,3.22,1,SOUTHWEST
+Karlsruher SC,1.03,2.09,3.22,1,SOUTH
+Borussia Neunkirchen,0.94,2.41,3.22,1,SOUTHWEST
+Tasmania Berlin,0.44,3.18,3.22,1,NORTHEAST
+FC St. Pauli,2.63,1.22,3.40,2,NORTH
+1. SC Göttingen 05,2.03,1.00,3.40,2,NORTH
+Holstein Kiel,2.13,1.28,3.40,2,NORTH
+Bremerhaven 93,1.91,1.47,3.40,2,NORTH
+VfB Lübeck,1.38,1.09,3.40,2,NORTH
+SV Arminia Hannover,2.09,1.53,3.40,2,NORTH
+VfL Osnabrück,1.75,1.72,3.40,2,NORTH
+VfL Wolfsburg,1.72,1.72,3.40,2,NORTH
+SC Concordia Hamburg,1.53,1.63,3.40,2,NORTH
+Altona 93,1.28,1.47,3.40,2,NORTH
+ASV Bergedorf 85,1.75,2.03,3.40,2,NORTH
+VfB Oldenburg,1.81,2.16,3.40,2,NORTH
+Bremer SV,1.81,2.13,3.40,2,NORTH
+Itzehoer SV,1.50,1.88,3.40,2,NORTH
+VfV Hildesheim,1.09,1.69,3.40,2,NORTH
+SV Friedrichsort,1.41,2.31,3.40,2,NORTH
+SC Victoria Hamburg,1.13,2.63,3.40,2,NORTH
+Hertha BSC,4.53,0.83,4.02,2,NORTHEAST
+Tennis Borussia Berlin,3.60,1.67,4.02,2,NORTHEAST
+Spandauer SV,2.93,1.77,4.02,2,NORTHEAST
+Wacker 04 Berlin,2.57,1.73,4.02,2,NORTHEAST
+Hertha Zehlendorf,1.77,1.43,4.02,2,NORTHEAST
+SC Staaken,1.80,1.57,4.02,2,NORTHEAST
+BFC Südring,1.63,1.77,4.02,2,NORTHEAST
+1. FC Neukölln,1.70,2.07,4.02,2,NORTHEAST
+Berliner SV 92,1.63,2.17,4.02,2,NORTHEAST
+Blau-Weiß 90 Berlin,1.67,1.93,4.02,2,NORTHEAST
+Reinickendorfer Füchse,1.67,2.33,4.02,2,NORTHEAST
+VfB Hermsdorf,2.03,2.50,4.02,2,NORTHEAST
+Lichterfelder SU,1.13,2.73,4.02,2,NORTHEAST
+SC Tegel,1.13,2.53,4.02,2,NORTHEAST
+SC Gatow,1.20,2.00,4.02,2,NORTHEAST
+Viktoria 89 Berlin,1.13,3.10,4.02,2,NORTHEAST
+Fortuna Düsseldorf,2.32,0.65,3.18,2,WEST
+Rot-Weiss Essen,2.18,0.91,3.18,2,WEST
+Alemannia Aachen,2.85,1.18,3.18,2,WEST
+Rot-Weiß Oberhausen,1.79,1.35,3.18,2,WEST
+Wuppertaler SV,1.44,1.26,3.18,2,WEST
+Preußen Münster,1.62,1.38,3.18,2,WEST
+Schwarz-Weiß Essen,1.38,1.38,3.18,2,WEST
+Hamborn 07,1.29,1.35,3.18,2,WEST
+SC Viktoria Köln,1.50,1.74,3.18,2,WEST
+Arminia Bielefeld,1.76,1.71,3.18,2,WEST
+Eintracht Duisburg,1.38,1.56,3.18,2,WEST
+VfL Bochum,1.35,1.94,3.18,2,WEST
+TSV Marl-Hüls,1.38,1.71,3.18,2,WEST
+Bayer 04 Leverkusen,1.44,2.21,3.18,2,WEST
+Westfalia Herne,1.15,1.94,3.18,2,WEST
+Eintracht Gelsenkirchen,1.06,1.97,3.18,2,WEST
+VfB Bottrop,1.38,2.00,3.18,2,WEST
+STV Horst-Emscher,1.24,2.29,3.18,2,WEST
+FK Pirmasens,2.07,1.03,3.60,2,SOUTHWEST
+1. FC Saarbrücken,2.97,1.33,3.60,2,SOUTHWEST
+FSV Mainz 05,2.20,1.30,3.60,2,SOUTHWEST
+TuS Neuendorf,2.70,2.07,3.60,2,SOUTHWEST
+Wormatia Worms,1.73,1.37,3.60,2,SOUTHWEST
+Saar 05 Saarbrücken,1.47,1.30,3.60,2,SOUTHWEST
+VfR Frankenthal,1.83,1.67,3.60,2,SOUTHWEST
+SV 06 Völklingen,1.73,1.93,3.60,2,SOUTHWEST
+SV Alsenborn,1.90,1.83,3.60,2,SOUTHWEST
+SpVgg Weisenau,2.03,2.20,3.60,2,SOUTHWEST
+Südwest Ludwigshafen,1.53,1.67,3.60,2,SOUTHWEST
+Phönix Bellheim,1.20,2.00,3.60,2,SOUTHWEST
+Eintracht Trier,1.47,1.63,3.60,2,SOUTHWEST
+Ludwigshafener SC,1.43,2.03,3.60,2,SOUTHWEST
+BSC Oppau,1.23,2.80,3.60,2,SOUTHWEST
+TSC Zweibrücken,1.37,2.70,3.60,2,SOUTHWEST
+FC Schweinfurt 05,2.18,1.15,3.66,2,SOUTH
+Kickers Offenbach,2.29,1.41,3.66,2,SOUTH
+SV Waldhof Mannheim,2.29,1.76,3.66,2,SOUTH
+SpVgg Fürth,2.06,1.53,3.66,2,SOUTH
+Stuttgarter Kickers,1.91,1.53,3.66,2,SOUTH
+KSV Hessen Kassel,2.06,1.82,3.66,2,SOUTH
+1. FC Pforzheim,1.41,1.35,3.66,2,SOUTH
+SSV Reutlingen 05,1.76,1.47,3.66,2,SOUTH
+Bayern Hof,2.09,1.85,3.66,2,SOUTH
+Opel Rüsselsheim,1.71,1.79,3.66,2,SOUTH
+Schwaben Augsburg,1.94,1.82,3.66,2,SOUTH
+VfR Mannheim,1.62,1.76,3.66,2,SOUTH
+SV Darmstadt 98,1.59,2.09,3.66,2,SOUTH
+FSV Frankfurt,1.79,2.24,3.66,2,SOUTH
+Freiburger FC,1.62,1.74,3.66,2,SOUTH
+ESV Ingolstadt,1.85,2.21,3.66,2,SOUTH
+SpVgg Weiden,1.50,1.88,3.66,2,SOUTH
+VfR Pforzheim,1.32,3.59,3.66,2,SOUTH
