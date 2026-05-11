@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -102,16 +101,11 @@ public abstract class Person implements Serializable {
     }
 
     private LocalDate randomBirthDate(int birthYear) {
-        int month = new Random().nextInt(1, 13);
-        int day;
-        if (Arrays.asList(new int[]{1, 3, 5, 7, 8, 10, 12}).contains(month)) {
-            day = new Random().nextInt(1, 32);
-        } else if (Arrays.asList(new int[]{4, 6, 9, 11}).contains(month)) {
-            day = new Random().nextInt(1, 31);
-        } else {
-            day = new Random().nextInt(1, 29);
-        }
-        return LocalDate.of(birthYear, month, day);
+        boolean isLeapYear = LocalDate.ofYearDay(
+            birthYear, 1).isLeapYear();
+        int numberOfDays = isLeapYear ? 366 : 365;
+        int dayOfYear = (int) Math.random() * numberOfDays + 1;
+        return LocalDate.ofYearDay(birthYear, dayOfYear);
     }
 
     private int randomIntelligence() {
