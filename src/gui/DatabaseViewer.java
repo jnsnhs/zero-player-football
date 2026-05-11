@@ -83,9 +83,12 @@ public class DatabaseViewer extends JFrame {
         String data[][] = new String[rowCount][];
         String column[] = new String[]{
             "Name",
-            "Pos",
-            "NPs",
+            "Pos.",
+            "NP",
             "St.",
+            "Fo.",
+            "Mo.",
+            "ES",
             "Alter",
             "Nat."
         };
@@ -96,6 +99,9 @@ public class DatabaseViewer extends JFrame {
                 player.getMainPosition().toString(),
                 player.altPositionsToString(),
                 String.valueOf(player.getSkill()),
+                String.valueOf(player.getFitness()),
+                String.valueOf(player.getMotivation()),
+                String.valueOf(player.calcActualSkill()),
                 String.valueOf(player.getAge(database.getCalendar().getToday())),
                 player.getNationality().toString()
             };
