@@ -113,7 +113,7 @@ public abstract class Person implements Serializable {
     }
 
     /**
-     * Based on the Big Five Personality Trait Model:
+     * Based on the Big Five Personality Traits Model:
      * https://en.wikipedia.org/wiki/Big_Five_personality_traits
      */
     private HashMap<Trait, Integer> randomPersonality() {
