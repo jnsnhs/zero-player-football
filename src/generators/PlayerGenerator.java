@@ -103,7 +103,7 @@ public class PlayerGenerator {
         double avgPlayerAge = 25.5;
         int maxPlayerAge = 39;
         return (int) RndHelper.triangularDistribution(
-            minPlayerAge, avgPlayerAge, maxPlayerAge);
+            minPlayerAge, maxPlayerAge, avgPlayerAge);
     }
 
     private static Position[] randomAltPositions(Position mainPosition) {
@@ -138,6 +138,8 @@ public class PlayerGenerator {
         }
         return output;
     }
+
+    // TODO: Fix a bug that causes players of weaker clubs to have wired skill values.
 
     private static int randomSkill(
         int leagueLevel,

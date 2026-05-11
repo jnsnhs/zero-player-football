@@ -42,6 +42,14 @@ public class Player extends Person {
         return skill;
     }
 
+    public String altPositionsToString() {
+        String result = "";
+        for (Position position : altPositions) {
+            result += position != null ? position.toString() : " ";
+        }
+        return result;
+    }
+
     @Override
     public String toString() {
         String result = "  ";

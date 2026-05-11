@@ -48,7 +48,7 @@ public class GroundGenerator {
         double performanceFactor = 1 + (attackingBonus + defendingBonus) / 2;
         avgCapacity *= performanceFactor;
         int rndCapacity =  (int) RndHelper.triangularDistribution(
-            minCapacity, avgCapacity, maxCapacity);
+            minCapacity, maxCapacity, avgCapacity);
         rndCapacity = rndCapacity >= minCapacity ? rndCapacity : minCapacity;
         rndCapacity = rndCapacity <= maxCapacity ? rndCapacity : maxCapacity;
         return rndCapacity;

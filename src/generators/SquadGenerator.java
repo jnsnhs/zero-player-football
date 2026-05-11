@@ -29,15 +29,17 @@ public class SquadGenerator {
         }
         return squad;
     }
-    // TODO add current year as parameter
+
+    // Current values based on Bundesliga data from 1995.
+    // TODO add current year and leagueLevel as parameters
     private static int getRandomNumberOfPlayers(int currentYear) {
-        return (int) Math.round(
-            RndHelper.triangularDistribution(18, 24, 20));
+        return (int) Math.round(RndHelper.triangularDistribution(
+                20, 31, 24.2));
     }
 
     private static ArrayList<Position> getRandomMainPositions(int numberOfPlayers) {
         ArrayList<Position> result = new ArrayList<>(30);
-        int numberOfGk = Math.random() < 0.75 ? 2 : 3; // TODO
+        int numberOfGk = Math.random() < 0.75 ? 2 : 3;
         for (int i = 0; i < numberOfGk; i++) {
             result.add(Position.GK);
         }
