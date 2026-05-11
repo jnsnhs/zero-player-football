@@ -1,6 +1,7 @@
 package gui;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
@@ -21,11 +22,17 @@ public class DatabaseViewer extends JFrame {
         setSize(640, 480);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
+        setIconImage(loadIconImage());
         setJMenuBar(createMenuBar());
     }
 
     public void setDatabase(Database database) {
         this.database = database;
+    }
+
+    private Image loadIconImage() {
+        ImageIcon imgIcon = new ImageIcon("./res/icons/ball.png");
+        return imgIcon.getImage();
     }
 
     private JMenuBar createMenuBar() {
@@ -58,14 +65,14 @@ public class DatabaseViewer extends JFrame {
         }
         getContentPane().add(comboBox);
         JPanel panel = new JPanel();
-        panel.setBounds(20, 20, 300, 200);
-        JButton button = new JButton("Verein Anzeigen");
+        panel.setLayout(new FlowLayout());
+        JButton button = new JButton("Spieler anzeigen");
         button.addActionListener(_ -> {
             int i = comboBox.getSelectedIndex();
             displayClubDetails(panel, database.getClubs()[i]);
         });
         getContentPane().add(button);
-        getContentPane().add(panel);        
+        getContentPane().add(panel);
         setVisible(true);
     }
 
@@ -76,28 +83,30 @@ public class DatabaseViewer extends JFrame {
         String data[][] = new String[rowCount][];
         String column[] = new String[]{
             "Name",
+            "Pos",
+            "NPs",
+            "St.",
             "Alter",
-            "Nat.",
-            "IQ",
-            "Pos.",
-            "St."
+            "Nat."
         };
         for (int i = 0; i < rowCount; i++) {
             Player player = players.get(i);
             data[i] = new String[]{
                 player.getFullName(),
-                String.valueOf(player.getAge(database.getCalendar().getToday())),
-                player.getNationality().toString(),
-                String.valueOf(player.getIntelligence()),
                 player.getMainPosition().toString(),
-                String.valueOf(player.getSkill())
+                player.altPositionsToString(),
+                String.valueOf(player.getSkill()),
+                String.valueOf(player.getAge(database.getCalendar().getToday())),
+                player.getNationality().toString()
             };
         }
         JTable table = new JTable(data, column);
-        table.setBounds(30, 40, 250, 100);
+
+        // table.setBounds(30, 40, 250, 100);
         JScrollPane scrollpane = new JScrollPane(table);
-        scrollpane.setBounds(20, 20, 250, 100);
+        // scrollpane.setBounds(120, 120, 50, 50);
         panel.add(scrollpane);
+        // panel.add(table);
         panel.setVisible(true);
         setVisible(true);
     }
