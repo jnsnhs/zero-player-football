@@ -51,9 +51,11 @@ public class Player extends Person {
         } else {
             motivationalFactor = (double) motivation / 100;
         }
-        double result = (skill - 1 + fitness / 10) * motivationalFactor;
-        result = Math.floor(result * 10) / 10;
-        return result <= 14.0 ? result : 14.0;
+        double result = ((double) skill - 1 + (double) fitness / 10) * motivationalFactor;
+        result = (double) Math.floor(result * 10) / 10;
+        result = result < 14.0 ? result : 13.9;
+        result = result > 0.0 ? result : 0.1;
+        return result;
     }
 
     public String altPositionsToString() {
