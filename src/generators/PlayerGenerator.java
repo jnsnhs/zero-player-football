@@ -109,7 +109,7 @@ public class PlayerGenerator {
     }
 
     private static int randomMotivation() {
-        int result = (int) new Random().nextGaussian(100, 5);
+        int result = (int) new Random().nextGaussian(110, 5);
         return result <= 120 ? result : 120;
     }
 
@@ -153,7 +153,7 @@ public class PlayerGenerator {
 
     // TODO: Fix a bug that causes players of weaker clubs to have wired skill values.
 
-    private static int randomSkill(
+    public static int randomSkill(
         int leagueLevel,
         Position mainPosition,
         double attClubBonus,
@@ -162,15 +162,29 @@ public class PlayerGenerator {
         int maxClubSkill, avgClubSkill, minClubSkill;
         switch (leagueLevel) {
             case 1:
-                maxClubSkill = 10; avgClubSkill = 8; minClubSkill = 7; break;
+                maxClubSkill = 10;
+                avgClubSkill = 9;
+                minClubSkill = 8;
+                break;
             case 2:
-                maxClubSkill = 7; avgClubSkill = 6; minClubSkill = 5; break;
+                maxClubSkill = 8;
+                avgClubSkill = 7;
+                minClubSkill = 6;
+                break;
             case 3:
-                maxClubSkill = 5; avgClubSkill = 4; minClubSkill = 3; break;
+                maxClubSkill = 6;
+                avgClubSkill = 5;
+                minClubSkill = 4;
+                break;
             case 4:
-                maxClubSkill = 3; avgClubSkill = 2; minClubSkill = 1; break;
+                maxClubSkill = 4;
+                avgClubSkill = 3;
+                minClubSkill = 2;
+                break;
             default:
-                maxClubSkill = 12; avgClubSkill = 6; minClubSkill = 1;
+                maxClubSkill = 12;
+                avgClubSkill = 6;
+                minClubSkill = 1;
         }
         double expectedAttSkill = expectedAttackingSkill(
             attClubBonus, minClubSkill, avgClubSkill, maxClubSkill);
@@ -184,8 +198,11 @@ public class PlayerGenerator {
         } else {
             expectedSkill = (expectedDefSkill + expectedAttSkill) / 2;
         }
-        return (int) Math.round(
+        int randomSkill = (int) Math.round(
             new Random().nextGaussian(expectedSkill, 1.0));
+        randomSkill = randomSkill <= 12 ? randomSkill : 12;
+        randomSkill = randomSkill >= 1 ? randomSkill : 1;
+        return randomSkill;
     }
 
     private static double expectedAttackingSkill(
@@ -194,28 +211,34 @@ public class PlayerGenerator {
         int avgClubSkill,
         int maxClubSkill
     ) {
-        if (attClubBonus >= 0) {
-            double expSkill = 2 * (1 + attClubBonus) * (maxClubSkill - avgClubSkill) + 4;
-            return expSkill <= maxClubSkill ? Math.round(expSkill) : maxClubSkill;
-        } else {
-            double expSkill = 2 * (1 + attClubBonus) * (avgClubSkill - minClubSkill) + 6;
-            return expSkill >= minClubSkill ? Math.round(expSkill) : minClubSkill;
+        double result = avgClubSkill;
+        if (attClubBonus > 0) {
+            result += (maxClubSkill - avgClubSkill) * attClubBonus / 0.5;
+            result = result <= maxClubSkill ? result : maxClubSkill;
         }
+        if (attClubBonus < 0) {
+            result += (avgClubSkill - minClubSkill) * attClubBonus / 0.5;
+            result = result >= minClubSkill ? result : minClubSkill;
+        }
+        return result;
     }
 
-    private static int expectedDefensiveSkill(
+    private static double expectedDefensiveSkill(
         double defClubBonus,
         int minClubSkill,
         int avgClubSkill,
         int maxClubSkill
     ) {
-        if (defClubBonus >= 0) {
-            double expSkill = 2 * (1 - defClubBonus) * (avgClubSkill - maxClubSkill) + 12;
-            return expSkill <= maxClubSkill ? (int) Math.round(expSkill) : maxClubSkill;
-        } else {
-            double expSkill = 2 * (1 - defClubBonus) * (minClubSkill - avgClubSkill) + 10;
-            return expSkill >= minClubSkill ? (int) Math.round(expSkill) : minClubSkill;
+        double result = avgClubSkill;
+        if (defClubBonus > 0) {
+            result += (maxClubSkill - avgClubSkill) * defClubBonus / 0.5;
+            result = result <= maxClubSkill ? result : maxClubSkill;
         }
+        if (defClubBonus < 0) {
+            result += (avgClubSkill - minClubSkill) * defClubBonus / 0.5;
+            result = result >= minClubSkill ? result : minClubSkill;
+        }
+        return result;
     }
 
     private static boolean hasDefensivePosition(Position mainPosition) {

@@ -45,13 +45,14 @@ public class Player extends Person {
     }
 
     public double calcActualSkill() {
-        int motivationalFactor;
+        double motivationalFactor;
         if (motivation > 110) {
-            motivationalFactor = (220 - motivation) / 100;
+            motivationalFactor = (double) (220 - motivation) / 100;
         } else {
-            motivationalFactor = motivation / 100;
+            motivationalFactor = (double) motivation / 100;
         }
         double result = (skill - 1 + fitness / 10) * motivationalFactor;
+        result = Math.floor(result * 10) / 10;
         return result <= 14.0 ? result : 14.0;
     }
 
