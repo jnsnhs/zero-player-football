@@ -1,109 +1,109 @@
-name,avg_gf,avg_ga,avg_goals_game,league_lvl,region
-Borussia Dortmund,2.24,1.12,2.72,1,WEST
-FC Bayern München,1.94,1.35,2.72,1,SOUTH
-FC Schalke 04,1.32,1.06,2.72,1,WEST
-Borussia Mönchengladbach,1.53,1.50,2.72,1,WEST
-Hamburger SV,1.53,1.38,2.72,1,NORTH
-Hansa Rostock,1.38,1.26,2.72,1,NORTHEAST
-Karlsruher SC,1.56,1.38,2.72,1,SOUTH
-TSV 1860 München,1.53,1.35,2.72,1,SOUTH
-Werder Bremen,1.15,1.24,2.72,1,NORTH
-VfB Stuttgart,1.74,1.82,2.72,1,SOUTH
-SC Freiburg,0.88,1.21,2.72,1,SOUTH
-1. FC Köln,0.97,1.03,2.72,1,WEST
-Fortuna Düsseldorf,1.18,1.38,2.72,1,WEST
-Bayer 04 Leverkusen,1.09,1.12,2.72,1,WEST
-FC St. Pauli,1.26,1.50,2.72,1,NORTH
-1. FC Kaiserslautern,0.91,1.09,2.72,1,SOUTHWEST
-Eintracht Frankfurt,1.26,2.00,2.72,1,SOUTH
-KFC Uerdingen 05,0.97,1.65,2.72,1,WEST
-VfL Bochum,2.00,0.88,2.60,2,WEST
-Arminia Bielefeld,1.62,1.32,2.60,2,WEST
-MSV Duisburg,1.62,1.09,2.60,2,WEST
-SpVgg Unterhaching,1.53,1.12,2.60,2,SOUTH
-FSV Zwickau,1.15,1.41,2.60,2,NORTHEAST
-FC Carl Zeiss Jena,1.44,1.59,2.60,2,NORTHEAST
-SV Waldhof Mannheim,1.44,1.38,2.60,2,SOUTH
-SC Fortuna Köln,1.09,1.09,2.60,2,WEST
-VfB Leipzig,1.03,1.44,2.60,2,NORTHEAST
-SV Meppen,1.32,1.26,2.60,2,NORTH
-1. FSV Mainz 05,1.09,1.21,2.60,2,SOUTHWEST
-VfL Wolfsburg,1.21,1.35,2.60,2,NORTH
-VfB Lübeck,1.18,1.32,2.60,2,NORTHEAST
-Hertha BSC 1,1.09,1.03,2.60,2,NORTHEAST
-Chemnitzer FC,1.26,1.50,2.60,2,NORTHEAST
-Hannover 96,1.12,1.41,2.60,2,NORTH
-1. FC Nürnberg 2,0.97,1.18,2.60,2,SOUTH
-SG Wattenscheid 09,1.12,1.68,2.60,2,WEST
-VfB Oldenburg,1.65,1.06,2.74,3,NORTH
-Eintracht Braunschweig,1.85,1.03,2.74,3,NORTH
-TuS Celle FC,1.85,1.18,2.74,3,NORTH
-Kickers Emden,1.79,1.44,2.74,3,NORTH
-VfL Osnabrück,1.53,1.24,2.74,3,NORTH
-Hamburger SV Amateure,1.32,1.24,2.74,3,NORTH
-FC St. Pauli Amateure,1.59,1.71,2.74,3,NORTH
-Lüneburger SK,1.53,1.35,2.74,3,NORTH
-VfL Herzlake,1.15,1.29,2.74,3,NORTH
-SV Wilhelmshaven,1.18,1.18,2.74,3,NORTH
-SV Lurup,1.24,1.44,2.74,3,NORTH
-SC Concordia Hamburg,1.12,1.35,2.74,3,NORTH
-1. SC Norderstedt,1.09,1.50,2.74,3,NORTH
-SV Atlas Delmenhorst,1.24,1.50,2.74,3,NORTH
-Werder Bremen Amateure,1.09,1.29,2.74,3,NORTH
-VfL 93 Hamburg,1.15,1.50,2.74,3,NORTH
-BV Cloppenburg,1.29,1.79,2.74,3,NORTH
-Holstein Kiel,1.00,1.56,2.74,3,NORTH
-Tennis Borussia Berlin,2.12,0.74,2.56,3,NORTHEAST
-1. FC Union Berlin,2.12,0.68,2.56,3,NORTHEAST
-Energie Cottbus,1.97,0.68,2.56,3,NORTHEAST
-Dynamo Dresden,1.35,0.68,2.56,3,NORTHEAST
-FC Erzgebirge Aue,1.53,1.03,2.56,3,NORTHEAST
-FC Sachsen Leipzig,1.47,1.32,2.56,3,NORTHEAST
-FC Rot-Weiß Erfurt,0.91,0.76,2.56,3,NORTHEAST
-FSV Lok Altmark Stendal,0.94,1.38,2.56,3,NORTHEAST
-Reinickendorfer Füchse,1.06,0.97,2.56,3,NORTHEAST
-Spandauer SV,1.06,1.53,2.56,3,NORTHEAST
-FSV Wacker 90 Nordhausen,1.03,1.09,2.56,3,NORTHEAST
-Hertha Zehlendorf,0.91,1.38,2.56,3,NORTHEAST
-FC Berlin,1.29,2.00,2.56,3,NORTHEAST
-Eisenhüttenstädter FC Stahl,1.26,2.00,2.56,3,NORTHEAST
-FSV Velten 1990,1.35,2.35,2.56,3,NORTHEAST
-Bischofswerdaer FV 08,0.71,1.21,2.56,3,NORTHEAST
-Hertha BSC Amateure,1.35,1.79,2.56,3,NORTHEAST
-FSV Optik Rathenow,0.59,1.44,2.56,3,NORTHEAST
-FC Gütersloh,2.35,1.06,2.90,3,WEST
-Rot-Weiss Essen,1.76,0.91,2.90,3,WEST
-FC 08 Homburg,2.03,1.09,2.90,3,SOUTHWEST
-Wuppertaler SV,1.68,1.24,2.90,3,WEST
-TuS Paderborn-Neuhaus,2.00,1.38,2.90,3,WEST
-Alemannia Aachen,1.91,1.56,2.90,3,WEST
-1. FC Saarbrücken,1.88,1.41,2.90,3,SOUTHWEST
-Rot-Weiß Oberhausen,1.24,0.97,2.90,3,WEST
-Preußen Münster,1.74,1.44,2.90,3,WEST
-SC Verl,1.65,1.62,2.90,3,WEST
-SpVgg Erkenschwick,1.24,1.18,2.90,3,WEST
-1. FC Bocholt,1.47,1.85,2.90,3,WEST
-FSV Salmrohr,1.26,1.53,2.90,3,SOUTHWEST
-SC Hauenstein,1.06,1.38,2.90,3,SOUTHWEST
-Eintracht Trier,1.12,1.56,2.90,3,SOUTHWEST
-1. FC Kaiserslautern Amateure,1.47,2.41,2.90,3,SOUTHWEST
-SG Wattenscheid 09 Amateure,1.38,2.03,2.90,3,WEST
-Borussia Neunkirchen,0.88,2.03,3.04,3,SOUTH
-Stuttgarter Kickers,2.41,0.97,3.04,3,SOUTH
-VfR Mannheim,2.09,1.21,3.04,3,SOUTH
-SSV Ulm 1846,1.65,1.18,3.04,3,SOUTH
-SSV Reutlingen 05,1.62,1.15,3.04,3,SOUTH
-TSF Ditzingen,1.97,1.50,3.04,3,SOUTH
-TSV Vestenbergsgreuth,1.29,1.06,3.04,3,SOUTH
-SpVgg 07 Ludwigsburg,1.71,1.62,3.04,3,SOUTH
-SpVgg Fürth,1.76,1.76,3.04,3,SOUTH
-Wacker Burghausen,1.50,1.03,3.04,3,SOUTH
-FC Hessen Kassel,1.29,1.68,3.04,3,SOUTH
-FC Augsburg,1.24,1.38,3.04,3,SOUTH
-SC Neukirchen,1.29,1.56,3.04,3,SOUTH
-FC Bayern München Amateure,1.00,1.38,3.04,3,SOUTH
-SG Egelsbach,1.29,1.88,3.04,3,SOUTH
-SV Darmstadt 98,1.59,1.97,3.04,3,SOUTH
-SV Sandhausen,1.24,1.74,3.04,3,SOUTH
-Eintracht Frankfurt Amateure,0.97,1.79,3.04,3,SOUTH
-FSV Frankfurt,0.85,1.91,3.04,3,SOUTH
+location,avg_gf,avg_ga,avg_goals_game,league_lvl,region
+Dortmund,2.24,1.12,2.72,1,WEST
+München,1.94,1.35,2.72,1,SOUTH
+Gelsenkirchen,1.32,1.06,2.72,1,WEST
+Mönchengladbach,1.53,1.50,2.72,1,WEST
+Hamburg,1.53,1.38,2.72,1,NORTH
+Rostock,1.38,1.26,2.72,1,NORTHEAST
+Karlsruhe,1.56,1.38,2.72,1,SOUTH
+München,1.53,1.35,2.72,1,SOUTH
+Gremen,1.15,1.24,2.72,1,NORTH
+Stuttgart,1.74,1.82,2.72,1,SOUTH
+Freiburg,0.88,1.21,2.72,1,SOUTH
+Köln,0.97,1.03,2.72,1,WEST
+Düsseldorf,1.18,1.38,2.72,1,WEST
+Leverkusen,1.09,1.12,2.72,1,WEST
+Hamburg,1.26,1.50,2.72,1,NORTH
+Kaiserslautern,0.91,1.09,2.72,1,SOUTHWEST
+Frankfurt,1.26,2.00,2.72,1,SOUTH
+Uerdingen,0.97,1.65,2.72,1,WEST
+Bochum,2.00,0.88,2.60,2,WEST
+Bielefeld,1.62,1.32,2.60,2,WEST
+Duisburg,1.62,1.09,2.60,2,WEST
+Unterhaching,1.53,1.12,2.60,2,SOUTH
+Zwickau,1.15,1.41,2.60,2,NORTHEAST
+Jena,1.44,1.59,2.60,2,NORTHEAST
+Mannheim,1.44,1.38,2.60,2,SOUTH
+Köln,1.09,1.09,2.60,2,WEST
+Leipzig,1.03,1.44,2.60,2,NORTHEAST
+Meppen,1.32,1.26,2.60,2,NORTH
+Mainz,1.09,1.21,2.60,2,SOUTHWEST
+Wolfsburg,1.21,1.35,2.60,2,NORTH
+Lübeck,1.18,1.32,2.60,2,NORTHEAST
+Berlin,1.09,1.03,2.60,2,NORTHEAST
+Chemnitz,1.26,1.50,2.60,2,NORTHEAST
+Hannover,1.12,1.41,2.60,2,NORTH
+Nürnberg,0.97,1.18,2.60,2,SOUTH
+Wattenscheid,1.12,1.68,2.60,2,WEST
+Oldenburg,1.65,1.06,2.74,3,NORTH
+Braunschweig,1.85,1.03,2.74,3,NORTH
+Celle,1.85,1.18,2.74,3,NORTH
+Emden,1.79,1.44,2.74,3,NORTH
+Osnabrück,1.53,1.24,2.74,3,NORTH
+Hamburg,1.32,1.24,2.74,3,NORTH
+Hamburg,1.59,1.71,2.74,3,NORTH
+Lübeck,1.53,1.35,2.74,3,NORTH
+Herzlake,1.15,1.29,2.74,3,NORTH
+Wilhelmshaven,1.18,1.18,2.74,3,NORTH
+Lurup,1.24,1.44,2.74,3,NORTH
+Hamburg,1.12,1.35,2.74,3,NORTH
+Norderstedt,1.09,1.50,2.74,3,NORTH
+Delmenhorst,1.24,1.50,2.74,3,NORTH
+Bremen,1.09,1.29,2.74,3,NORTH
+Hamburg,1.15,1.50,2.74,3,NORTH
+Cloppenburg,1.29,1.79,2.74,3,NORTH
+Kiel,1.00,1.56,2.74,3,NORTH
+Berlin,2.12,0.74,2.56,3,NORTHEAST
+Berlin,2.12,0.68,2.56,3,NORTHEAST
+Cottbus,1.97,0.68,2.56,3,NORTHEAST
+Dresden,1.35,0.68,2.56,3,NORTHEAST
+Aue,1.53,1.03,2.56,3,NORTHEAST
+Leipzig,1.47,1.32,2.56,3,NORTHEAST
+Erfurt,0.91,0.76,2.56,3,NORTHEAST
+Stendal,0.94,1.38,2.56,3,NORTHEAST
+Berlin,1.06,0.97,2.56,3,NORTHEAST
+Berlin,1.06,1.53,2.56,3,NORTHEAST
+Nordhausen,1.03,1.09,2.56,3,NORTHEAST
+Berlin,0.91,1.38,2.56,3,NORTHEAST
+Berlin,1.29,2.00,2.56,3,NORTHEAST
+Eisenhüttenstadt,1.26,2.00,2.56,3,NORTHEAST
+Velten,1.35,2.35,2.56,3,NORTHEAST
+Bischofswerda,0.71,1.21,2.56,3,NORTHEAST
+Berlin,1.35,1.79,2.56,3,NORTHEAST
+Rathenow,0.59,1.44,2.56,3,NORTHEAST
+Gütersloh,2.35,1.06,2.90,3,WEST
+Essen,1.76,0.91,2.90,3,WEST
+Homburg,2.03,1.09,2.90,3,SOUTHWEST
+Wuppertal,1.68,1.24,2.90,3,WEST
+Paderborn,2.00,1.38,2.90,3,WEST
+Aachen,1.91,1.56,2.90,3,WEST
+Saarbrücken,1.88,1.41,2.90,3,SOUTHWEST
+Oberhausen,1.24,0.97,2.90,3,WEST
+Münster,1.74,1.44,2.90,3,WEST
+Verl,1.65,1.62,2.90,3,WEST
+Erkenschwick,1.24,1.18,2.90,3,WEST
+Bocholt,1.47,1.85,2.90,3,WEST
+Salmrohr,1.26,1.53,2.90,3,SOUTHWEST
+Hauenstein,1.06,1.38,2.90,3,SOUTHWEST
+Trier,1.12,1.56,2.90,3,SOUTHWEST
+Kaiserslautern,1.47,2.41,2.90,3,SOUTHWEST
+Wattenscheid,1.38,2.03,2.90,3,WEST
+Neunkirchen,0.88,2.03,3.04,3,SOUTH
+Stuttgart,2.41,0.97,3.04,3,SOUTH
+Mannheim,2.09,1.21,3.04,3,SOUTH
+Ulm,1.65,1.18,3.04,3,SOUTH
+Reutlingen,1.62,1.15,3.04,3,SOUTH
+Ditzingen,1.97,1.50,3.04,3,SOUTH
+Vestenbergsgreuth,1.29,1.06,3.04,3,SOUTH
+Ludwigsburg,1.71,1.62,3.04,3,SOUTH
+Fürth,1.76,1.76,3.04,3,SOUTH
+Burghauesn,1.50,1.03,3.04,3,SOUTH
+Kassel,1.29,1.68,3.04,3,SOUTH
+Augsburg,1.24,1.38,3.04,3,SOUTH
+Neukirchen,1.29,1.56,3.04,3,SOUTH
+München-Harlaching,1.00,1.38,3.04,3,SOUTH
+Egelsbach,1.29,1.88,3.04,3,SOUTH
+Darmstadt,1.59,1.97,3.04,3,SOUTH
+Sandhausen,1.24,1.74,3.04,3,SOUTH
+Frankfurt,0.97,1.79,3.04,3,SOUTH
+Frankfurt,0.85,1.91,3.04,3,SOUTH
