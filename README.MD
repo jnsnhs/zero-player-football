@@ -1,0 +1,1 @@
+![Screenshot des Database Viewers](./img/screenshot_database_viewer.png)
