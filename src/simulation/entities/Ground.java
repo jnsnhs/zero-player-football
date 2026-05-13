@@ -8,15 +8,7 @@ public class Ground implements Serializable {
     private int capacity;
 
     public Ground(String name, int capacity) {
-        setName(name);
-        setCapacity(capacity);
-    }
-
-    private void setName(String name) {
         this.name = name;
-    }
-
-    public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 

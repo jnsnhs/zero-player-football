@@ -27,75 +27,56 @@ public abstract class Person implements Serializable {
         int birthYear,
         Gender gender
     ) {
-        setNationality(nationality);
-        setBirthDate(randomBirthDate(birthYear));
-        setGender(gender);
-        setLastName(randomlastName(nationality));
-        setFirstName(randomfirstName(nationality, birthYear, gender));
-
-        setIntelligence(randomIntelligence());
-        setPersonality(randomPersonality());
-    }
-
-    protected void setNationality(Nationality nationality) {
         this.nationality = nationality;
-    }
-
-    protected void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    private void setGender(Gender gender) {
+        birthDate = randomBirthDate(birthYear);
         this.gender = gender;
-    }
-
-    protected void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    protected void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    private void setIntelligence(int intelligence) {
-        this.intelligence = intelligence;
-    }
-
-    public void setPersonality(HashMap<Trait, Integer> personality) {
-        this.personality = personality;
+        lastName = randomlastName(nationality);
+        firstName = randomfirstName(nationality, birthYear, gender);
+        intelligence = randomIntelligence();
+        personality = randomPersonality();
     }
 
     public String getFirstName() {
         return firstName;
     }
+
     public String getLastName() {
         return lastName;
     }
+    
     public String getFullName() {
         return firstName + " " + lastName;
     }
+    
     public String getAbbName() {
         return firstName.charAt(0) + ". " + lastName;
     }
+    
     public String getAbbNameRev() {
         return lastName + ", " + firstName.charAt(0) + ".";
     }
+    
     public LocalDate getBirthDate() {
         return birthDate;
     }
+    
     public int getAge(LocalDate today) {
         int age = today.getYear() - birthDate.getYear();
         return today.getDayOfYear() < birthDate.getDayOfYear() ? age-- : age;
     }
+    
     public Nationality getNationality() {
         return nationality;
     }
+    
     public Gender getGender() {
         return gender;
     }
+    
     public int getIntelligence() {
         return intelligence;
     }
+    
     public HashMap<Trait, Integer> getPersonality() {
         return personality;
     }

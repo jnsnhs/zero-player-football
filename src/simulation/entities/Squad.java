@@ -8,24 +8,25 @@ public class Squad implements Serializable{
     private ArrayList<Player> players;
 
     public Squad() {
-        setPlayers();
+        players = new ArrayList<Player>();
     }
 
     public void addPlayer(Player player) {
         players.add(player);
     }
+    
     public void removePlayer(Player player) {
         players.remove(player);
     }
-    private void setPlayers() {
-        this.players = new ArrayList<Player>();
-    }
+
     public ArrayList<Player> getPlayers() {
         return players;
     }
+    
     public int getSize() {
         return players.size();
     }
+
     @Override
     public String toString() {
         String result = "";

@@ -15,25 +15,9 @@ public class Club implements Serializable {
         Manager manager,
         Squad squad
     ) {
-        setName(name);
-        setGround(ground);
-        setManager(manager);
-        setSquad(squad);
-    }
-
-    public void setName(String name) {
         this.name = name;
-    }
-
-    public void setGround(Ground ground) {
         this.ground = ground;
-    }
-
-    public void setManager(Manager manager) {
         this.manager = manager;
-    }
-
-    public void setSquad(Squad squad) {
         this.squad = squad;
     }
 

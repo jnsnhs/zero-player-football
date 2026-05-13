@@ -15,20 +15,14 @@ public class Referee extends Person {
         int strictness
     ) {
         super(nationality, birthYear, gender);
-        setExpertise(expertise);
-        setStrictness(strictness);
-    }
-
-    public void setExpertise(int expertise) {
         this.expertise = expertise;
-    }
-    public void setStrictness(int strictness) {
         this.strictness = strictness;
     }
     
     public int getExpertise() {
         return expertise;
     }
+    
     public int getStrictness() {
         return strictness;
     }

@@ -13,10 +13,6 @@ public class Manager extends Person {
         int expertise
     ) {
         super(nationality, birthyear, gender);
-        setExpertise(expertise);
-    }
-
-    public void setExpertise(int expertise) {
         this.expertise = expertise;
     }
 
