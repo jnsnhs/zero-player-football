@@ -39,10 +39,10 @@ public class Database implements Serializable{
             clubs[i] = ClubGenerator.run(
                 year,
                 values[0],                      // name of club
-                (int) Integer.parseInt(values[4]),    // league level
-                (double) Double.parseDouble(values[1]),  // avg goals for club
-                (double) Double.parseDouble(values[2]),  // avg goals against club
-                (double) Double.parseDouble(values[3])   // avg  goals per league game
+                (int) Integer.parseInt(values[5]),    // league level
+                (double) Double.parseDouble(values[2]),  // avg goals for club
+                (double) Double.parseDouble(values[3]),  // avg goals against club
+                (double) Double.parseDouble(values[4])   // avg  goals per league game
             );
         }
         this.clubs = clubs;  
@@ -67,18 +67,6 @@ public class Database implements Serializable{
 
     public Referee[] getReferees() {
         return referees;
-    }
-
-    public void printReferees() {
-        for (Referee ref : referees) {
-            IO.println(ref);
-        }
-    }
-
-    public void printClubs() {
-        for (Club club : clubs) {
-            IO.println(club);
-        }
     }
 
     private ArrayList<String> readRecordsFromCsv(String pathToFile) {

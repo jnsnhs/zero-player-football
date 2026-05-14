@@ -1,147 +1,147 @@
-location,avg_gf,avg_ga,avg_goals_game,league_lvl,region
-München,3.55,1.06,3.18,1,SOUTH
-Dortmund,2.06,1.03,3.18,1,WEST
-Leipzig,1.97,1.30,3.18,1,NORTHEAST
-Stuttgart,2.09,1.42,3.18,1,SOUTH
-Hoffenheim,1.97,1.45,3.18,1,SOUTH
-Leverkusen,2.03,1.39,3.18,1,WEST
-Freiburg,1.36,1.61,3.18,1,SOUTH
-Frankfurt,1.79,1.91,3.18,1,SOUTH
-Augsburg,1.36,1.73,3.18,1,SOUTH
-Mainz,1.24,1.52,3.18,1,SOUTHWEST
-Mönchengladbach,1.15,1.61,3.18,1,WEST
-Hamburg,1.09,1.55,3.18,1,NORTH
-Berlin,1.12,1.73,3.18,1,NORTHEAST
-Köln,1.42,1.67,3.18,1,WEST
-Bremen,1.12,1.76,3.18,1,NORTH
-Wolfsburg,1.27,2.06,3.18,1,NORTH
-Hamburg,0.85,1.73,3.18,1,NORTH
-Heidenheim,1.15,2.09,3.18,1,SOUTH
-Gelsenkirchen,1.48,0.94,2.92,2,WEST
-Elversberg,1.82,1.18,2.92,2,SOUTHWEST
-Hannover,1.73,1.24,2.92,2,NORTH
-Paderborn,1.73,1.36,2.92,2,WEST
-Darmstadt,1.73,1.30,2.92,2,SOUTH
-Berlin,1.36,1.12,2.92,2,NORTHEAST
-Kaiserslautern,1.55,1.42,2.92,2,SOUTHWEST
-Nürnberg,1.33,1.27,2.92,2,SOUTH
-Karlsruhe,1.58,1.88,2.92,2,SOUTH
-Bochum,1.42,1.39,2.92,2,WEST
-Kiel,1.30,1.39,2.92,2,NORTH
-Magdeburg,1.58,1.73,2.92,2,NORTHEAST
-Dresden,1.58,1.58,2.92,2,NORTHEAST
-Düsseldort,1.00,1.48,2.92,2,WEST
-Braunschweig,1.09,1.61,2.92,2,NORTH
-Bielefeld,1.42,1.52,2.92,2,WEST
-Fürth,1.36,2.03,2.92,2,SOUTH
-Münster,1.15,1.76,2.92,2,WEST
-Osnabrück,1.68,0.84,3.14,3,NORTH
-Cottbus,1.92,1.38,3.14,3,NORTHEAST
-Duisburg,1.76,1.30,3.14,3,WEST
-Essen,2.03,1.73,3.14,3,WEST
-Rostock,1.89,1.24,3.14,3,NORTHEAST
-Verl,2.14,1.30,3.14,3,WEST
-Aachen,1.81,1.51,3.14,3,WEST
-München,1.46,1.35,3.14,3,SOUTH
-Mannheim,1.57,1.81,3.14,3,SOUTH
-Köln,1.35,1.32,3.14,3,WEST
-Wiesbaden,1.41,1.41,3.14,3,SOUTH
-Regensburg,1.46,1.54,3.14,3,SOUTH
-Ingolstadt,1.62,1.49,3.14,3,SOUTH
-Stuttgart,1.46,1.76,3.14,3,SOUTH
-Saarbrücken,1.24,1.35,3.14,3,SOUTHWEST
-Hoffenheim,1.68,1.81,3.14,3,SOUTH
-Havelse,1.49,2.24,3.14,3,NORTH
-Ulm,1.27,2.03,3.14,3,SOUTH
-Aue,1.27,1.84,3.14,3,NORTHEAST
-Schweinfurt,0.97,2.22,3.14,3,SOUTH
-Jena,1.91,1.06,2.96,4,NORTHEAST
-Leipzig,1.79,0.85,2.96,4,NORTHEAST
-Erfurt,2.06,1.36,2.96,4,NORTHEAST
-Zwickau,1.55,1.33,2.96,4,NORTHEAST
-Halle,1.76,1.09,2.96,4,NORTHEAST
-Berlin,1.48,1.21,2.96,4,NORTHEAST
-Chemnitz,1.64,1.52,2.96,4,NORTHEAST
-Berlin,1.52,1.64,2.96,4,NORTHEAST
-Magdeburg,1.76,1.42,2.96,4,NORTHEAST
-Luckenwalde,1.06,1.30,2.96,4,NORTHEAST
-Leipzig,1.30,1.45,2.96,4,NORTHEAST
-Berlin,1.36,1.73,2.96,4,NORTHEAST
-Babelsberg,1.85,1.91,2.96,4,NORTHEAST
-Greifswald,1.12,1.27,2.96,4,NORTHEAST
-Berlin,1.27,1.45,2.96,4,NORTHEAST
-Meuselwitz,1.30,1.82,2.96,4,NORTHEAST
-Eilenburg,1.06,1.91,2.96,4,NORTHEAST
-Berlin,0.85,2.30,2.96,4,NORTHEAST
-Nürnberg,2.00,1.00,2.96,4,SOUTH
-Würzburg,2.12,0.73,2.96,4,SOUTH
-Unterhaching,2.06,0.91,2.96,4,SOUTH
-Illertisesn,2.12,1.36,2.96,4,SOUTH
-Eichstätt,1.45,1.09,2.96,4,SOUTH
-Cham,1.33,1.27,2.96,4,SOUTH
-Burghausen,1.39,1.39,2.96,4,SOUTH
-Aubstadt,1.36,1.36,2.96,4,SOUTH
-Ansbach,1.61,1.85,2.96,4,SOUTH
-München,1.70,1.58,2.96,4,SOUTH
-Buchbach,1.61,2.09,2.96,4,SOUTH
-Memmingen,1.27,1.42,2.96,4,SOUTH
-Bayreuth,1.09,1.48,2.96,4,SOUTH
-Augsburg,1.12,1.42,2.96,4,SOUTH
-Augsburg,1.15,1.76,2.96,4,SOUTH
-Fürth,1.36,1.67,2.96,4,SOUTH
-Aschaffenburg,0.94,2.00,2.96,4,SOUTH
-Leiblfing,0.88,2.18,2.96,4,SOUTH
-Aspach,2.61,1.24,3.36,4,SOUTHWEST
-Freiberg,1.97,1.06,3.36,4,SOUTHWEST
-Frankfurt,1.88,1.42,3.36,4,SOUTHWEST
-Sandhausen,1.58,1.61,3.36,4,SOUTHWEST
-Homburg,2.06,1.24,3.36,4,SOUTHWEST
-Haiger,2.24,1.70,3.36,4,SOUTHWEST
-Manz,1.58,1.24,3.36,4,SOUTHWEST
-Kassel,1.79,1.52,3.36,4,SOUTHWEST
-Stuttgart,1.48,1.33,3.36,4,SOUTHWEST
-Fulda,1.52,1.27,3.36,4,SOUTHWEST
-Freiburg,2.12,2.21,3.36,4,SOUTHWEST
-Walldorf,1.82,1.94,3.36,4,SOUTHWEST
-Trier,1.39,1.58,3.36,4,SOUTHWEST
-Offenbach,1.70,1.67,3.36,4,SOUTHWEST
-Alzenau,1.27,2.15,3.36,4,SOUTHWEST
-Mainz,1.21,2.45,3.36,4,SOUTHWEST
-Balingen,1.12,2.52,3.36,4,SOUTHWEST
-Bahlingen,0.97,2.15,3.36,4,SOUTHWEST
-Köln,2.09,0.85,3.06,4,WEST
-Oberhausen,1.76,1.15,3.06,4,WEST
-Gelsenkirchen,2.18,1.48,3.06,4,WEST
-Mönchengladbach,1.79,1.27,3.06,4,WEST
-Dortmund,1.97,1.42,3.06,4,WEST
-Gütersloh,1.55,1.15,3.06,4,WEST
-Siegen,1.79,1.27,3.06,4,WEST
-Köln,1.61,1.73,3.06,4,WEST
-Lotte,1.30,1.61,3.06,4,WEST
-Paderborn,1.52,1.15,3.06,4,WEST
-Bonn,1.12,1.27,3.06,4,WEST
-Düsseldorf,1.36,1.70,3.06,4,WEST
-Bocholt,1.42,1.67,3.06,4,WEST
-Bochum,1.45,1.82,3.06,4,WEST
-Rödinghausen,1.39,1.85,3.06,4,WEST
-Wiedenbrück,1.12,1.97,3.06,4,WEST
-Wuppertal,1.09,2.09,3.06,4,WEST
-Velbert,1.03,2.09,3.06,4,WEST
-Meppen,3.00,1.00,3.52,4,NORTH
-Drochtersen,2.45,1.39,3.52,4,NORTH
-Oldenburg,2.48,1.27,3.52,4,NORTH
-Edewecht,2.39,1.45,3.52,4,NORTH
-Bremen,1.48,1.12,3.52,4,NORTH
-Lübeck,1.42,1.21,3.52,4,NORTH
-Hannover,1.85,1.45,3.52,4,NORTH
-Emden,1.85,1.61,3.52,4,NORTH
-Flensburg,2.06,1.91,3.52,4,NORTH
-Lübeck,1.64,1.82,3.52,4,NORTH
-Hamburg,1.55,1.45,3.52,4,NORTH
-Bremen,1.70,2.06,3.52,4,NORTH
-Schöningen,1.61,2.39,3.52,4,NORTH
-Hannover,1.30,2.45,3.52,4,NORTH
-Norderstedt,1.45,2.21,3.52,4,NORTH
-Hamburg,1.06,2.03,3.52,4,NORTH
-Hamburg,1.30,2.67,3.52,4,NORTH
-Lohne,1.12,2.21,3.52,4,NORTH
+modified_name,location,avg_gf,avg_ga,avg_goals_game,league_lvl,region
+1. Münchener SpVgg,München,3.55,1.06,3.18,1,SOUTH
+FC Westfalia Dortmund,Dortmund,2.06,1.03,3.18,1,WEST
+BC Leipzig,Leipzig,1.97,1.30,3.18,1,NORTHEAST
+Stuttgarter SC 93,Stuttgart,2.09,1.42,3.18,1,SOUTH
+VfL Kraichgau-Hoffenheim,Hoffenheim,1.97,1.45,3.18,1,SOUTH
+ASV Bayerstadt Leverkusen,Leverkusen,2.03,1.39,3.18,1,WEST
+FV Freiburg,Freiburg,1.36,1.61,3.18,1,SOUTH
+SC Mainmetropole Frankfurt,Frankfurt,1.79,1.91,3.18,1,SOUTH
+VfR Augsburg,Augsburg,1.36,1.73,3.18,1,SOUTH
+Mainzer Ballspiel-Union,Mainz,1.24,1.52,3.18,1,SOUTHWEST
+VfL Niederrhein Gladbach,Mönchengladbach,1.15,1.61,3.18,1,WEST
+Hanseatischer FC 87,Hamburg,1.09,1.55,3.18,1,NORTH
+1. SV Berlin-Köpenick,Berlin,1.12,1.73,3.18,1,NORTHEAST
+VfB Köln,Köln,1.42,1.67,3.18,1,WEST
+SV Bremen,Bremen,1.12,1.76,3.18,1,NORTH
+FC Wolfsburg,Wolfsburg,1.27,2.06,3.18,1,NORTH
+Viktoria Kiez-Klub Hamburg,Hamburg,0.85,1.73,3.18,1,NORTH
+ASV Heidenheim,Heidenheim,1.15,2.09,3.18,1,SOUTH
+1. DSC Gelsenkirchen,Gelsenkirchen,1.48,0.94,2.92,2,WEST
+FV Elversberg,Elversberg,1.82,1.18,2.92,2,SOUTHWEST
+Hannoveraner SV 91,Hannover,1.73,1.24,2.92,2,NORTH
+VfL Paderborn,Paderborn,1.73,1.36,2.92,2,WEST
+BC Lilienstadt Darmstadt,Darmstadt,1.73,1.30,2.92,2,SOUTH
+Berliner SC,Berlin,1.36,1.12,2.92,2,NORTHEAST
+1. SG Kaiserslautern,Kaiserslautern,1.55,1.42,2.92,2,SOUTHWEST
+Nürnberger FC 19,Nürnberg,1.33,1.27,2.92,2,SOUTH
+TuS Karlsruhe,Karlsruhe,1.58,1.88,2.92,2,SOUTH
+VfB Castroper-Ring Bochum,Bochum,1.42,1.39,2.92,2,WEST
+VfB Kieler SV,Kiel,1.30,1.39,2.92,2,NORTH
+VfB Magdeburg,Magdeburg,1.58,1.73,2.92,2,NORTHEAST
+VfR Sachsen Dresden,Dresden,1.58,1.58,2.92,2,NORTHEAST
+Düsseldorfer SpVgg 03,Düsseldort,1.00,1.48,2.92,2,WEST
+SC Welfenstadt Braunschweig,Braunschweig,1.09,1.61,2.92,2,NORTH
+Union Bielefeld,Bielefeld,1.42,1.52,2.92,2,WEST
+FC Kleeblatt Fürth,Fürth,1.36,2.03,2.92,2,SOUTH
+Viktoria Münster,Münster,1.15,1.76,2.92,2,WEST
+SG Osnabrück,Osnabrück,1.68,0.84,3.14,3,NORTH
+FC Lausitz Cottbus,Cottbus,1.92,1.38,3.14,3,NORTHEAST
+BC Duisburger FV,Duisburg,1.76,1.30,3.14,3,WEST
+SC Hafenstraße Essen,Essen,2.03,1.73,3.14,3,WEST
+VfB Rostock,Rostock,1.89,1.24,3.14,3,NORTHEAST
+SV Verl,Verl,2.14,1.30,3.14,3,WEST
+Kaiserstädter BC Aachen,Aachen,1.81,1.51,3.14,3,WEST
+Münchner Sport-Union,München,1.46,1.35,3.14,3,SOUTH
+FC Kurpfalz Mannheim,Mannheim,1.57,1.81,3.14,3,SOUTH
+Rechtsrheinischer SV,Köln,1.35,1.32,3.14,3,WEST
+Taunus-Club Wiesbaden,Wiesbaden,1.41,1.41,3.14,3,SOUTH
+VfR Donauufer Regensburg,Regensburg,1.46,1.54,3.14,3,SOUTH
+Schanzer FC Ingolstadt,Ingolstadt,1.62,1.49,3.14,3,SOUTH
+Stuttgarter SC 93 II,Stuttgart,1.46,1.76,3.14,3,SOUTH
+1. FC Saarlouis-Saar,Saarbrücken,1.24,1.35,3.14,3,SOUTHWEST
+VfL Kraichgau-Hoffenheim II,Hoffenheim,1.68,1.81,3.14,3,SOUTH
+SG Havelse,Havelse,1.49,2.24,3.14,3,NORTH
+Ulmer SpVgg 46,Ulm,1.27,2.03,3.14,3,SOUTH
+1. BC Wismut-Aue,Aue,1.27,1.84,3.14,3,NORTHEAST
+VfB Mainbogen Schweinfurt,Schweinfurt,0.97,2.22,3.14,3,SOUTH
+1. SV Saalestadt Jena,Jena,1.91,1.06,2.96,4,NORTHEAST
+Messemetropole SC 18,Leipzig,1.79,0.85,2.96,4,NORTHEAST
+VfR Erfurt,Erfurt,2.06,1.36,2.96,4,NORTHEAST
+BSG Pleißestadt Zwickau,Zwickau,1.55,1.33,2.96,4,NORTHEAST
+Hallescher FV,Halle,1.76,1.09,2.96,4,NORTHEAST
+ASV Altglienicke,Berlin,1.48,1.21,2.96,4,NORTHEAST
+FC Chemnitz,Chemnitz,1.64,1.52,2.96,4,NORTHEAST
+Preußischer BC 94,Berlin,1.52,1.64,2.96,4,NORTHEAST
+VfB Magdeburg II,Magdeburg,1.76,1.42,2.96,4,NORTHEAST
+SV Luckenwalde,Luckenwalde,1.06,1.30,2.96,4,NORTHEAST
+1. FC Leipziger SV,Leipzig,1.30,1.45,2.96,4,NORTHEAST
+Berliner SC II,Berlin,1.36,1.73,2.96,4,NORTHEAST
+BC Babelsberg,Babelsberg,1.85,1.91,2.96,4,NORTHEAST
+Bodden-Club Greifswald,Greifswald,1.12,1.27,2.96,4,NORTHEAST
+1. SpVgg Berlin-Ost,Berlin,1.27,1.45,2.96,4,NORTHEAST
+FSV Meuselwitz,Meuselwitz,1.30,1.82,2.96,4,NORTHEAST
+VfR Eilenburg,Eilenburg,1.06,1.91,2.96,4,NORTHEAST
+FC Zehlendorf,Berlin,0.85,2.30,2.96,4,NORTHEAST
+Nürnberger FC 19 II,Nürnberg,2.00,1.00,2.96,4,SOUTH
+VfB Würzburg,Würzburg,2.12,0.73,2.96,4,SOUTH
+Hachinger SC,Unterhaching,2.06,0.91,2.96,4,SOUTH
+ASV Illertissen,Illertisesn,2.12,1.36,2.96,4,SOUTH
+DSC Eichstätt,Eichstätt,1.45,1.09,2.96,4,SOUTH
+TuS Vilzing,Cham,1.33,1.27,2.96,4,SOUTH
+1. SC Salzachstadt,Burghausen,1.39,1.39,2.96,4,SOUTH
+SV Aubstadt,Aubstadt,1.36,1.36,2.96,4,SOUTH
+SG Ansbach,Ansbach,1.61,1.85,2.96,4,SOUTH
+1. SpVgg München II,München,1.70,1.58,2.96,4,SOUTH
+VfR Buchbach,Buchbach,1.61,2.09,2.96,4,SOUTH
+BC Memmingen,Memmingen,1.27,1.42,2.96,4,SOUTH
+Bayreuther SV 21,Bayreuth,1.09,1.48,2.96,4,SOUTH
+VfR Augsburg II,Augsburg,1.12,1.42,2.96,4,SOUTH
+VfB Fuggerstadt Augsburg,Augsburg,1.15,1.76,2.96,4,SOUTH
+FC Kleeblatt Fürth II,Fürth,1.36,1.67,2.96,4,SOUTH
+1. FC Untermain,Aschaffenburg,0.94,2.00,2.96,4,SOUTH
+FC Hankofen-Hailing,Leiblfing,0.88,2.18,2.96,4,SOUTH
+SV Murrtal-Aspach,Aspach,2.61,1.24,3.36,4,SOUTHWEST
+BC Freiberg,Freiberg,1.97,1.06,3.36,4,SOUTHWEST
+Frankfurter Sport-Union 99,Frankfurt,1.88,1.42,3.36,4,SOUTHWEST
+FC Hardtwald Sandhausen,Sandhausen,1.58,1.61,3.36,4,SOUTHWEST
+VfB Homburg,Homburg,2.06,1.24,3.36,4,SOUTHWEST
+SG Steinbach,Haiger,2.24,1.70,3.36,4,SOUTHWEST
+Mainzer Ballspiel-Union II,Manz,1.58,1.24,3.36,4,SOUTHWEST
+ASV Herkulesstadt Kassel,Kassel,1.79,1.52,3.36,4,SOUTHWEST
+VfB Degerloch Stuttgart,Stuttgart,1.48,1.33,3.36,4,SOUTHWEST
+1. BC Domstadt Fulda,Fulda,1.52,1.27,3.36,4,SOUTHWEST
+FV Freiburg II,Freiburg,2.12,2.21,3.36,4,SOUTHWEST
+SC Walldorf,Walldorf,1.82,1.94,3.36,4,SOUTHWEST
+VfR Moseltal Trier,Trier,1.39,1.58,3.36,4,SOUTHWEST
+Offenbacher FV,Offenbach,1.70,1.67,3.36,4,SOUTHWEST
+Alzenauer FV 20,Alzenau,1.27,2.15,3.36,4,SOUTHWEST
+VfL Mainz,Mainz,1.21,2.45,3.36,4,SOUTHWEST
+FC Balingen,Balingen,1.12,2.52,3.36,4,SOUTHWEST
+BC Bahlingen,Bahlingen,0.97,2.15,3.36,4,SOUTHWEST
+Kölner SC,Köln,2.09,0.85,3.06,4,WEST
+VfR Emscherstadt,Oberhausen,1.76,1.15,3.06,4,WEST
+1. DSC Gelsenkirchen II,Gelsenkirchen,2.18,1.48,3.06,4,WEST
+VfL Niederrhein Gladbach II,Mönchengladbach,1.79,1.27,3.06,4,WEST
+FC Westfalia Dortmund II,Dortmund,1.97,1.42,3.06,4,WEST
+ASV Gütersloher SV,Gütersloh,1.55,1.15,3.06,4,WEST
+1. BC Krönchenstadt,Siegen,1.79,1.27,3.06,4,WEST
+VfB Köln II,Köln,1.61,1.73,3.06,4,WEST
+VfL Lotte,Lotte,1.30,1.61,3.06,4,WEST
+VfL Paderborn II,Paderborn,1.52,1.15,3.06,4,WEST
+Bonner FV 01,Bonn,1.12,1.27,3.06,4,WEST
+Düsseldorfer SpVgg 21 II,Düsseldorf,1.36,1.70,3.06,4,WEST
+FC Bocholt,Bocholt,1.42,1.67,3.06,4,WEST
+VfB Castroper-Ring II,Bochum,1.45,1.82,3.06,4,WEST
+SpVgg Rödinghausen,Rödinghausen,1.39,1.85,3.06,4,WEST
+BC Wiedenbrück,Wiedenbrück,1.12,1.97,3.06,4,WEST
+VfL Schwebebahn-Klub,Wuppertal,1.09,2.09,3.06,4,WEST
+SC Schlüsselstadt Velbert,Velbert,1.03,2.09,3.06,4,WEST
+1. FC Emsland-Meppen,Meppen,3.00,1.00,3.52,4,NORTH
+SG Drochtersen/Assel,Drochtersen,2.45,1.39,3.52,4,NORTH
+SC Oldenburg,Oldenburg,2.48,1.27,3.52,4,NORTH
+SC Jeddeloh II,Edewecht,2.39,1.45,3.52,4,NORTH
+FC Bremen,Bremen,1.48,1.12,3.52,4,NORTH
+VfB Union Lübeck,Lübeck,1.42,1.21,3.52,4,NORTH
+Hannoveraner SV 91 II,Hannover,1.85,1.45,3.52,4,NORTH
+SV Seehafen Emden,Emden,1.85,1.61,3.52,4,NORTH
+VfB Förde-Flensburg,Flensburg,2.06,1.91,3.52,4,NORTH
+Hanse-Club Lübeck,Lübeck,1.64,1.82,3.52,4,NORTH
+Hanseatischer FC 87 II,Hamburg,1.55,1.45,3.52,4,NORTH
+SV Bremen II,Bremen,1.70,2.06,3.52,4,NORTH
+SV Schöningen,Schöningen,1.61,2.39,3.52,4,NORTH
+1. BC Hannover,Hannover,1.30,2.45,3.52,4,NORTH
+SC Norderstedt,Norderstedt,1.45,2.21,3.52,4,NORTH
+Viktoria Kiez-Klub II,Hamburg,1.06,2.03,3.52,4,NORTH
+Altonaer FC 93,Hamburg,1.30,2.67,3.52,4,NORTH
+FC Blau-Weiß Lohne,Lohne,1.12,2.21,3.52,4,NORTH
