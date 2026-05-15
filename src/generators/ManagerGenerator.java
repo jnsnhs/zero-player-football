@@ -2,11 +2,12 @@ package generators;
 
 import java.util.Random;
 
+import helpers.RndHelper;
 import simulation.attributes.Gender;
 import simulation.attributes.Nationality;
 import simulation.entities.Manager;
 
-public class ManagerGenerator {
+public abstract class ManagerGenerator {
 
     public static Manager run(
         int currentYear,
@@ -15,15 +16,34 @@ public class ManagerGenerator {
         double defClubBonus
     ) {
         return new Manager(
-            randomNationality(currentYear),
+            randomNationality(currentYear, leagueLevel),
             currentYear - randomAge(),
             Gender.MALE,
             randomExpertise(leagueLevel, attClubBonus, defClubBonus)
         );
     }
 
-    private static Nationality randomNationality(int currentYear) {
-        return Nationality.DE; // TODO implement various nationalities
+    private static Nationality randomNationality(
+        int currentYear,
+        int leagueLevel
+    ) {
+        Nationality nationality;
+        double domesticRatio = switch(currentYear) {
+            case 2025 -> 0.6;
+            case 1995 -> 0.8;
+            default   -> 1.0;  // 1965
+        };
+        if (Math.random() < 1 - (1 - domesticRatio) / leagueLevel) {
+            nationality = Nationality.DE;
+        } else {
+            Nationality[] nationalities = new Nationality[]{
+                Nationality.AT, Nationality.HR, Nationality.DK, Nationality.CH,
+                Nationality.PL, Nationality.BE, Nationality.ES
+            };
+            nationality = nationalities[RndHelper.chooseIndex(
+                nationalities.length)];
+        }
+        return nationality;
     }
 
     private static int randomAge() {
@@ -35,17 +55,18 @@ public class ManagerGenerator {
     }
 
     /**
-     * Expertise is the general skill level of a manager. Values range from 1 to 12.
-     * For the sake of simplicity and in order to get a few more extreme values
-     * expertise is supposed to be equaly distributed instead of normally.
+     * Expertise is supposed to be the general skill level of a manager. 
+     * Values range from 1 to 12. For the sake of simplicity and in order 
+     * to get a few more extreme values expertise is modeled as being 
+     * equally distributed instead of normally.
      * @param leagueLevel 
      */
     private static int randomExpertise(
         int leagueLevel,
-        double offClubBonus,
-        double defClubBonus
+        double attackingBonus,
+        double defendingBonus
     ) {
-        double totalClubBonus = 1 + (offClubBonus + defClubBonus) / 2;
+        double totalBonus = 1 + (attackingBonus + defendingBonus) / 2;
         int maxExpertise, avgExpertise, minExpertise;
         switch (leagueLevel) {
             case 1:
@@ -73,7 +94,7 @@ public class ManagerGenerator {
                 avgExpertise = 6;
                 minExpertise = 1;
         }
-        int expertise = (int) Math.round(avgExpertise * totalClubBonus);
+        int expertise = (int) Math.round(avgExpertise * totalBonus);
         expertise = expertise <= maxExpertise ? expertise : maxExpertise;
         expertise = expertise >= minExpertise ? expertise : minExpertise;
         return expertise;

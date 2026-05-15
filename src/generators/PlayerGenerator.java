@@ -7,7 +7,7 @@ import helpers.RndHelper;
 import simulation.attributes.*;
 import simulation.entities.*;
 
-public class PlayerGenerator {
+public abstract class PlayerGenerator {
     
     public static Player run(
         int currentYear,
@@ -17,7 +17,7 @@ public class PlayerGenerator {
         Position mainPosition
     ) {
         return new Player(
-            randomNationality(currentYear),
+            randomNationality(currentYear, leagueLevel),
             currentYear - randomAge(),
             Gender.MALE,
             mainPosition,
@@ -28,72 +28,50 @@ public class PlayerGenerator {
         );
     }
 
-    // TODO add leagueLevel as parameter
-    static Nationality randomNationality(int currentYear) {
-        Nationality[] nationalities;
-        int[] weights;
+    /**
+     * Based on Bundesliga data from 1965, 1995, and 20205. Lower ratio of
+     * foreign players in lower leagues purely based on guessing.
+     * @param currentYear
+     * @param leagueLevel
+     * @return random Nationality
+     */
+    private static Nationality randomNationality(int currentYear, int leagueLevel) {
+        Nationality rndNationality;
         if (currentYear == 1965) {
-            nationalities = new Nationality[]{
-                Nationality.DE
-            };
-            weights = new int[] {96};
+            rndNationality = Nationality.DE;
         } else if (currentYear == 1995) {
-            nationalities = new Nationality[]{
-                Nationality.DE,
-                Nationality.HR,
-                Nationality.PL,
-                Nationality.BR,
-                Nationality.CZ,
-                Nationality.BG,
-                Nationality.NL,
-                Nationality.US,
-                Nationality.SE,
-                Nationality.CH,
-                Nationality.MK,
-                Nationality.DK,
-                Nationality.RU,
-                Nationality.NG,
-                Nationality.TR,
-                Nationality.AT
-            };
-            weights = new int[] {74, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
-                1};
+            if (Math.random() < 1 - (1 - 0.74) / leagueLevel) {
+                rndNationality = Nationality.DE;
+            } else {
+                Nationality[] nationalities = new Nationality[]{
+                    Nationality.HR, Nationality.PL, Nationality.BR, Nationality.CZ,
+                    Nationality.BG, Nationality.NL, Nationality.US, Nationality.SE,
+                    Nationality.CH, Nationality.MK, Nationality.DK, Nationality.RU,
+                    Nationality.NG, Nationality.TR, Nationality.AT
+                };
+                int[] weights = new int[] {2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+                    1};
+                rndNationality = nationalities[RndHelper.chooseIndex(weights)];
+            }
         } else { // ccurrentYear == 2025
-            nationalities = new Nationality[]{
-                Nationality.DE,
-                Nationality.AT,
-                Nationality.FR,
-                Nationality.DK,
-                Nationality.JP,
-                Nationality.CH,
-                Nationality.US,
-                Nationality.NL,
-                Nationality.PT,
-                Nationality.BE,
-                Nationality.HR,
-                Nationality.BR,
-                Nationality.NG,
-                Nationality.TR,
-                Nationality.NO,
-                Nationality.PL,
-                Nationality.CZ,
-                Nationality.SE,
-                Nationality.GB_ENG,
-                Nationality.DZ,
-                Nationality.ES,
-                Nationality.AR,
-                Nationality.XK,
-                Nationality.RS,
-                Nationality.KR,
-                Nationality.GH,
-                Nationality.BA,
-                Nationality.HU
-                
-            };
-            weights = new int[] {41, 6, 5, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 
-                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+            if (Math.random() < 1 - (1 - 0.41) / leagueLevel) {
+                rndNationality = Nationality.DE;
+            } else {
+                Nationality[] nationalities = new Nationality[]{
+                    Nationality.AT, Nationality.FR, Nationality.DK, Nationality.JP,
+                    Nationality.CH, Nationality.US, Nationality.NL, Nationality.PT,
+                    Nationality.BE, Nationality.HR, Nationality.BR, Nationality.NG,
+                    Nationality.TR, Nationality.NO, Nationality.PL, Nationality.CZ,
+                    Nationality.SE, Nationality.GB_ENG, Nationality.DZ,
+                    Nationality.ES, Nationality.AR, Nationality.XK, Nationality.RS,
+                    Nationality.KR, Nationality.GH, Nationality.BA, Nationality.HU 
+                };
+                int[] weights = new int[] {6, 5, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+                rndNationality = nationalities[RndHelper.chooseIndex(weights)];
+            }
         }
-        return nationalities[RndHelper.chooseIndex(weights)];
+        return rndNationality;
     }
 
     /**
@@ -119,10 +97,10 @@ public class PlayerGenerator {
     }
 
     private static Position[] randomAltPositions(Position mainPosition) {
-        Position[] output;
+        Position[] altPositions;
         boolean hasAltPosition = Math.random() < 0.5 ? true : false;
         if (!hasAltPosition || mainPosition == Position.GK) {
-            output = new Position[0];
+            altPositions = new Position[0];
         } else {
             Position[] defPositions = new Position[]{
                 Position.SW, Position.LB, Position.CB, Position.RB
@@ -146,12 +124,10 @@ public class PlayerGenerator {
                         new int[]{1, 1, 1, 1})];
                 }
             }
-            output = new Position[]{result};
+            altPositions = new Position[]{result};
         }
-        return output;
+        return altPositions;
     }
-
-    // TODO: Fix a bug that causes players of weaker clubs to have wired skill values.
 
     public static int randomSkill(
         int leagueLevel,
