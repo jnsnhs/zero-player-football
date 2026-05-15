@@ -1,5 +1,10 @@
 package simulation.attributes;
 
+/**
+ * Positions named according to commonly used abbreviations, seen for example
+ * in the Wikipedia article on football positions:
+ * https://en.wikipedia.org/wiki/Association_football_positions 
+ */
 public enum Position {
     GK,  // Goalkeeper
     SW,  // Sweeper

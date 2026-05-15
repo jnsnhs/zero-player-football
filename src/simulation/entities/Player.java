@@ -51,7 +51,8 @@ public class Player extends Person {
         } else {
             motivationalFactor = (double) motivation / 100;
         }
-        double result = ((double) skill - 1 + (double) fitness / 10) * motivationalFactor;
+        double result = ((double) skill - 1 + (double) fitness / 10);
+        result = result * motivationalFactor;
         result = (double) Math.floor(result * 10) / 10;
         result = result < 14.0 ? result : 13.9;
         result = result > 0.0 ? result : 0.1;

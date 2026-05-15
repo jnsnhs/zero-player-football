@@ -12,6 +12,11 @@ public class RndHelper {
         }
     }
 
+    public static int chooseIndex(int arrayLength) {
+        double randomNumber = Math.random() * arrayLength;
+        return (int) randomNumber;
+    }
+
     public static int chooseIndex(int[] weights) {
         int sumOfWeights = 0;
         for (int weight : weights) {

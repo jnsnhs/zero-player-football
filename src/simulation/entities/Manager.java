@@ -12,7 +12,11 @@ public class Manager extends Person {
         Gender gender,
         int expertise
     ) {
-        super(nationality, birthyear, gender);
+        super(
+            nationality,
+            birthyear,
+            gender
+        );
         this.expertise = expertise;
     }
 
@@ -22,9 +26,8 @@ public class Manager extends Person {
 
     @Override
     public String toString() {
-        String result = getFullName() + " (*" + getBirthDate().getYear() + "), ";
-        result += "Expertise " + getExpertise();
-        return result;
+        return getFullName() + " (*" + getBirthDate().getYear() +
+            "), Expertise " + getExpertise();
     }
 
 }

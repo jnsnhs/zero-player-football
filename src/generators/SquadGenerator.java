@@ -7,7 +7,7 @@ import helpers.RndHelper;
 import simulation.attributes.*;
 import simulation.entities.*;
 
-public class SquadGenerator {
+public abstract class SquadGenerator {
 
     public static Squad run(
         int currentYear,
@@ -16,7 +16,7 @@ public class SquadGenerator {
         double defendingBonus
     ) {
         Squad squad = new Squad();
-        int numberOfPlayers = getRandomNumberOfPlayers(currentYear);
+        int numberOfPlayers = getRandomNumberOfPlayers();
         for (Position mainPosition : getRandomMainPositions(numberOfPlayers)) {
             Player player = PlayerGenerator.run(
                 currentYear,
@@ -32,16 +32,17 @@ public class SquadGenerator {
 
     // Current values based on Bundesliga data from 1995.
     // TODO add current year and leagueLevel as parameters
-    private static int getRandomNumberOfPlayers(int currentYear) {
+    private static int getRandomNumberOfPlayers() {
         return (int) Math.round(RndHelper.triangularDistribution(
                 20, 31, 24.2));
     }
 
-    private static ArrayList<Position> getRandomMainPositions(int numberOfPlayers) {
-        ArrayList<Position> result = new ArrayList<>(30);
+    private static ArrayList<Position> getRandomMainPositions(
+            int numberOfPlayers) {
+        ArrayList<Position> positions = new ArrayList<>(30);
         int numberOfGk = Math.random() < 0.75 ? 2 : 3;
         for (int i = 0; i < numberOfGk; i++) {
-            result.add(Position.GK);
+            positions.add(Position.GK);
         }
         Position[] defaultOutfieldPositions =
          {
@@ -50,16 +51,16 @@ public class SquadGenerator {
             Position.LW, Position.CF, Position.CF, Position.RW
         };
         for (Position position : defaultOutfieldPositions) {
-            result.add(position);
+            positions.add(position);
         }
-        if (result.size() < numberOfPlayers) {
+        if (positions.size() < numberOfPlayers) {
             Random rnd = new Random();
-            while (result.size() < numberOfPlayers) {
-                result.add(defaultOutfieldPositions[rnd.nextInt(
+            while (positions.size() < numberOfPlayers) {
+                positions.add(defaultOutfieldPositions[rnd.nextInt(
                     0, defaultOutfieldPositions.length)]);
             }
         }
-        return result;
+        return positions;
     }
 
 }

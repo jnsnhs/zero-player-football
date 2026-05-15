@@ -6,20 +6,16 @@ import simulation.attributes.Gender;
 import simulation.attributes.Nationality;
 import simulation.entities.Referee;
 
-public class RefereeGenerator {
+public abstract class RefereeGenerator {
 
     public static Referee run(int currentYear) {
         return new Referee(
-            randomNationality(),
+            Nationality.DE,
             currentYear - randomAge(),
             Gender.MALE,
             randomExpertise(),
             randomStrictness()
         );
-    }
-
-    private static Nationality randomNationality() {
-        return Nationality.DE;
     }
 
     private static int randomAge() {

@@ -21,7 +21,7 @@ public class Ground implements Serializable {
 
     @Override
     public String toString() {
-        return capacity + " Plätze";
+        return name + ", " + capacity + " Plätze";
     }
 
 }

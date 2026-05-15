@@ -7,8 +7,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import generators.ClubGenerator;
-import generators.RefereeGenerator;
+import generators.*;
 import simulation.entities.*;
 
 public class Database implements Serializable{

@@ -44,11 +44,15 @@ public class ClubGenerator {
         return club;
     }
 
-    private static double getAttBonus(double avgGoalsForClub, double avgGoalsInLeagueGame) {
+    private static double getAttBonus(
+        double avgGoalsForClub, double avgGoalsInLeagueGame
+    ) {
         return avgGoalsForClub / (avgGoalsInLeagueGame / 2) - 1;
     }
 
-    private static double getDefBonus(double avgGoalsAgainstClub, double avgGoalsInLeagueGame) {
+    private static double getDefBonus(
+        double avgGoalsAgainstClub, double avgGoalsInLeagueGame
+    ) {
         return 1 - avgGoalsAgainstClub / (avgGoalsInLeagueGame / 2);
     }
 
