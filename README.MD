@@ -4,7 +4,6 @@ Dieses Projekt ist aus meinem Interesse an klassischen [Fußball-Manager](https:
 
 ![Screenshot des Database Viewers](./doc/screenshots/screenshot_database_viewer.png)
 
-
 ## Hintergrund
 
 Fußball-Manager-Spiele wie die der [Anstoß](https://de.wikipedia.org/wiki/Anstoss)-Reihe waren in den 90er und frühen 00er Jahren auf dem Zenit ihrer Popularität. Die Stärke dieses Genres liegt darin, durch eine detailverliebte Simulation sportlicher und wirtschaftlicher Aspekte die Atmosphäre, Spannung und Dramatik einer gesamten Bundesligasaison auf nur wenigen Stunden Spielzeit zu verdichten.
@@ -25,3 +24,5 @@ Die Kernbestandteile des Modells werden sich an Spielmechaniken von [Anstoß 3](
 - eine satirische Komponente, die vor allem durch einflussreiche Zufallsereignisse zum Ausdruck kommt.
 
 Die technische Umsetzung von *Zero-Player Football* ist als reine Desktop-Anwendung mit einer simplen, zweckmäßigen Benutzerschnittstelle geplant, um den Schwerpunkt auf die Entwicklung eines stabilen Modells zu legen. Erst im zweiten Projektabschnitt, wenn das Modell zu einem interaktiven Spiel erweitert wird, kann die Gestaltung einer grafischen Oberfläche in den Fokus rücken.
+
+Grudnsätzlich gilt: *Zero-Player Football* ein exploratives und experimentelles Projekt, das mein Interesse an Fußball und Statistik mit der Möglichkeit verknüpft, Konzepte und Vorgehensweisen der objektorientierten Anwendungsentwicklung praktisch zu vertiefen. Dabei ist vorrangig der Weg das Ziel, nicht die Fertigstellung eines ausgereiften Spiels.
