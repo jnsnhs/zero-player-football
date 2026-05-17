@@ -25,4 +25,4 @@ Die Kernbestandteile des Modells werden sich an Spielmechaniken von [Anstoß 3](
 
 Die technische Umsetzung von *Zero-Player Football* ist als reine Desktop-Anwendung mit einer simplen, zweckmäßigen Benutzerschnittstelle geplant, um den Schwerpunkt auf die Entwicklung eines stabilen Modells zu legen. Erst im zweiten Projektabschnitt, wenn das Modell zu einem interaktiven Spiel erweitert wird, kann die Gestaltung einer grafischen Oberfläche in den Fokus rücken.
 
-Grudnsätzlich gilt: *Zero-Player Football* ein exploratives und experimentelles Projekt, das mein Interesse an Fußball und Statistik mit der Möglichkeit verknüpft, Konzepte und Vorgehensweisen der objektorientierten Anwendungsentwicklung praktisch zu vertiefen. Dabei ist vorrangig der Weg das Ziel, nicht die Fertigstellung eines ausgereiften Spiels.
+Grudnsätzlich ist *Zero-Player Football* ein exploratives und experimentelles Projekt, das mein Interesse an Fußball und Statistik mit der Möglichkeit verknüpft, Konzepte und Vorgehensweisen der objektorientierten Anwendungsentwicklung praktisch zu vertiefen. Dabei ist vorrangig der Weg das Ziel, nicht die Fertigstellung eines ausgereiften Spiels.
