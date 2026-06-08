@@ -2,8 +2,6 @@
 
 Dieses Projekt ist aus meinem Interesse an klassischen [Fußball-Manager](https://de.wikipedia.org/wiki/Fu%C3%9Fball-Manager)-Spielen entstanden. Es ist der erste Schritt des Versuchs, die Grundzüge einer solchen Fußballsimulation selbst zu programmieren. Weil das Projekt noch ganz am Anfang des Entwicklungsprozesses steht, erlaubt die derzeitige Version zunächst ausschließlich das Erzeugen, Speichern und Laden einer Vereins- und Spielerdatenbank. Weitere Features werden folgen.
 
-![Screenshot des Database Viewers](./doc/screenshots/screenshot_database_viewer.png)
-
 ## Hintergrund
 
 Fußball-Manager-Spiele wie die der [Anstoß](https://de.wikipedia.org/wiki/Anstoss)-Reihe waren in den 90er und frühen 00er Jahren auf dem Zenit ihrer Popularität. Die Stärke dieses Genres liegt darin, durch eine detailverliebte Simulation sportlicher und wirtschaftlicher Aspekte die Atmosphäre, Spannung und Dramatik einer gesamten Bundesligasaison auf nur wenigen Stunden Spielzeit zu verdichten.
@@ -26,3 +24,5 @@ Die Kernbestandteile des Modells werden sich an Spielmechaniken von [Anstoß 3](
 Die technische Umsetzung von *Zero-Player Football* ist als reine Desktop-Anwendung mit einer simplen, zweckmäßigen Benutzerschnittstelle geplant, um den Schwerpunkt auf die Entwicklung eines stabilen Modells zu legen. Erst im zweiten Projektabschnitt, wenn das Modell zu einem interaktiven Spiel erweitert wird, kann die Gestaltung einer grafischen Oberfläche in den Fokus rücken.
 
 Grudnsätzlich ist *Zero-Player Football* ein exploratives und experimentelles Projekt, das mein Interesse an Fußball und Statistik mit der Möglichkeit verknüpft, Konzepte und Vorgehensweisen der objektorientierten Anwendungsentwicklung praktisch zu vertiefen. Dabei ist vorrangig der Weg das Ziel, nicht die Fertigstellung eines ausgereiften Spiels.
+
+![Screenshot des Database Viewers](./doc/screenshots/screenshot_database_viewer.png)
